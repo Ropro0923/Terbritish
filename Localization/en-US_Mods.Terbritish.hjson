@@ -1,0 +1,167 @@
+Items: {
+	BritishShortsword: {
+		Tooltip: ""
+		DisplayName: British Shortsword
+	}
+
+	Shank: {
+		Tooltip: ""
+		DisplayName: Shank
+	}
+
+	FlamingYoyo: {
+		DisplayName: Flaming Yoyo
+		Tooltip: ""
+	}
+
+	TeaLauncher: {
+		Tooltip: ""
+		DisplayName: Tea Launcher
+	}
+
+	ExampleCustomAmmoGun: {
+		Tooltip: ""
+		DisplayName: Example Custom Ammo Gun
+	}
+
+	BiscuitBeater: {
+		Tooltip: ""
+		DisplayName: Biscuit Beater
+	}
+
+	CuppaTea: {
+		DisplayName: Cuppa Tea
+		Tooltip: ""
+	}
+
+	Ceramic: {
+		DisplayName: Ceramic
+		Tooltip: ""
+	}
+
+	TeaLeaves: {
+		DisplayName: Tea Leaves
+		Tooltip: ""
+	}
+
+	BritishBazooka: {
+		DisplayName: British Bazooka
+		Tooltip: ""
+	}
+
+	London: {
+		DisplayName: London
+		Tooltip: ""
+	}
+
+	TeaLeafHelmet: {
+		SetBonus: Mods.Terbritish.Items.TeaLeafHelmet.SetBonus
+		DisplayName: Tea Leaf Helmet
+		Tooltip: ""
+	}
+
+	TeaLeafChestplate: {
+		DisplayName: Tea Leaf Chestplate
+		Tooltip: ""
+	}
+
+	TeaLeafLeggings: {
+		DisplayName: Tea Leaf Leggings
+		Tooltip: ""
+	}
+
+	DapperChapper: {
+		Tooltip: ""
+		DisplayName: Dapper Chapper
+	}
+}
+
+DamageClasses: {
+	BritishDamageClass.DisplayName: British Damage Class
+	BritishDamage.DisplayName: British Damage
+	britishDamage.DisplayName: british Damage
+}
+
+Projectiles: {
+	FlamingYoyoProjectile.DisplayName: Flaming Yoyo Projectile
+	TeaProjectile.DisplayName: Tea Projectile
+	BiscuitBeaterProjectile.DisplayName: Biscuit Beater Projectile
+	TeaLauncherProjectile.DisplayName: Tea Launcher Projectile
+	TeaDroplet.DisplayName: Tea Droplet
+	BouncyGrenade.DisplayName: Bouncy Grenade
+	BritishGrenade.DisplayName: British Grenade
+	BritishBazookaRocket.DisplayName: British Bazooka Rocket
+	LondonProjectile.DisplayName: London Projectile
+}
+
+Buffs: {
+	Scalding: {
+		Description: Mods.Terbritish.Buffs.Scalding.Description
+		DisplayName: Scalding
+	}
+
+	ScaldingNPC: {
+		DisplayName: Scalding NPC
+		Description: Mods.Terbritish.Buffs.ScaldingNPC.Description
+	}
+}
+
+Dialogue: {
+	DapperChapper: {
+		StandardDialogue1: Well Bob’s your uncle
+		StandardDialogue2: I just can't figure out why I'm here. It's quite gobsmacking.
+		StandardDialogue3: Well, this isn't the mall.
+		StandardDialogue4: It's "Teh-RAH-ria"
+		CommonDialogue: Fish and chips my beloved
+		RareDialogue: Fancy a cuppa tea and crumpets?
+		TalkALot: Oi! Get out of here already!
+	}
+}
+
+Bestiary.DapperChapper_1: Hailing from a mysterious land known as "London." Not much is known about this mysterious species.
+
+NPCs: {
+	DapperChapper: {
+		TownNPCMood: {
+			Princess_LovesNPC: I like {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			HateNPC: I hate {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			LikeNPC: I like {NPCName}.
+			LoveNPC: I love {NPCName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LikeBiome: I like {BiomeName}.
+			HateCrowded: I hate how crowded I am.
+			DislikeCrowded: I dislike how crowded I am.
+			LoveSpace: I love having so much space.
+			FarFromHome: I am too far from home.
+			NoHome: I hate not having a home.
+			Content: I am content.
+		}
+
+		DisplayName: Dapper Chapper
+		Upgraded: Mods.Terbritish.NPCs.DapperChapper.Upgraded
+		Census.SpawnCondition: Conditions unknown
+	}
+}
+
+Configs: {
+	ShtunConfig: {
+		DisplayName: Shtun Config
+
+		TerMerica: {
+			Label: Ter Merica
+			Tooltip: ""
+		}
+
+		Spiritrum: {
+			Label: Spiritrum
+			Tooltip: ""
+		}
+
+		MagnoliasMod: {
+			Label: Magnolias Mod
+			Tooltip: ""
+		}
+	}
+}

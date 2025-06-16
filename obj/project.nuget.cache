@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "i0ed9sukEzI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rcber\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rcber\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
