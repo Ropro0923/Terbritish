@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 using Terbritish.Core;
 using Terbritish.Content.NPCs;
 
-namespace Terbritish.Fargowiltas
+namespace Terbritish.CrossMod.Fargowiltas
 {
     [ExtendsFromMod(ModCompatibility.Fargowiltas.Name)]
     [JITWhenModsEnabled(ModCompatibility.Fargowiltas.Name)]
@@ -11,7 +11,7 @@ namespace Terbritish.Fargowiltas
     {
         public static void RegisterItems()
         {
-            Terbritish.Add("DapperChapper", ModContent.NPCType<DapperChapper>());
+            TerbritishFargowiltas.Add("DapperChapper", ModContent.NPCType<DapperChapper>());
         }
     }
 }
