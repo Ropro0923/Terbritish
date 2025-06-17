@@ -102,7 +102,7 @@ namespace Terbritish.Content.Items.Weapons
             if (player.altFunctionUse == 2)
             {
                 Projectile.NewProjectile(source, position, velocity*3.25f, ModContent.ProjectileType<BloodslingerThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
-                Projectile.NewProjectile(source, position, velocity * 3.1f, ProjectileID.BloodArrow, (int)(damage * 0.48f), knockback, player.whoAmI);
+                Projectile.NewProjectile(source, position, velocity * 2.69f, ProjectileID.BloodArrow, (int)(damage * 0.48f), knockback, player.whoAmI);
                 return false;
             }
             Projectile.NewProjectile(source, position, velocity * 1.66f, ProjectileID.BloodArrow, (int)(damage * 0.67f), knockback, player.whoAmI);
