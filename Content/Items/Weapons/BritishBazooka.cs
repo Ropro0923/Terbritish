@@ -23,9 +23,9 @@ namespace Terbritish.Content.Items.Weapons
 			Item.damage = 50;
 			Item.DamageType = ModContent.GetInstance<BritishDamage>();
 			Item.width = 40;
-			Item.height = 20;
-			Item.useTime = 20;
-			Item.useAnimation = 20;
+			Item.height = 10;
+			Item.useTime = 30;
+			Item.useAnimation = 30;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.noMelee = true;
 			Item.knockBack = 4;
@@ -42,12 +42,14 @@ namespace Terbritish.Content.Items.Weapons
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{
 			// Offset forward in the direction you're aiming
-			Vector2 muzzleOffset = Vector2.Normalize(velocity) * 19f;
+			Vector2 muzzleOffset = Vector2.Normalize(velocity) * 45f;
 			// Only apply the forward offset if it doesn't hit a wall
 			if (Collision.CanHit(position, 0, 0, position + muzzleOffset, 0, 0))
 			{
 				position += muzzleOffset;
 			}
+			Vector2 verticalOffset = new Vector2(0, -6f);
+			position += verticalOffset;
 		}
 
 
@@ -62,7 +64,7 @@ namespace Terbritish.Content.Items.Weapons
 
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-8f, 2f); // Moves the position of the weapon in the player's hand.
+			return new Vector2(-12f, -7f); // Moves the position of the weapon in the player's hand.
 		}
 	}
 }
