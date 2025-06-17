@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
 using Terbritish.Content.Projectiles;
-
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -27,7 +26,7 @@ namespace Terbritish.Content.Items.Weapons
             Item.noMelee = true;
             Item.rare = ItemRarityID.White;
             Item.value = Item.sellPrice(0, 0, 0, 10);
-            Item.shoot = ModContent.ProjectileType<CopperKnifeProj>();
+            Item.shoot = ModContent.ProjectileType<CopperKnifeStab>();
             Item.shootSpeed = 2.1f;
         }
 
@@ -39,7 +38,7 @@ namespace Terbritish.Content.Items.Weapons
         {
 
            
-            if (type == ModContent.ProjectileType<CopperKnifeProj>())
+            if (type == ModContent.ProjectileType<CopperKnifeStab>())
             {
                 damage = (int)(damage * 1.5f);
             }
@@ -47,24 +46,11 @@ namespace Terbritish.Content.Items.Weapons
         }
         public override void AddRecipes()
         {
-            Recipe recipe = CreateRecipe();
-
-
-            
-               
+            Recipe recipe = CreateRecipe();  
                 recipe.AddIngredient(ItemID.CopperBar, 6);
               
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();
-            
-
-
-
-
-
-
-
-
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {

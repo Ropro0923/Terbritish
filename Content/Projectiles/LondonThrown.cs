@@ -8,7 +8,7 @@ using Terbritish.Content.Buffs;
 
 namespace Terbritish.Content.Projectiles
 {
-    public class LondonProjectileThrown : ModProjectile
+    public class LondonThrown : ModProjectile
     {
         public override void SetDefaults()
         {

@@ -26,7 +26,7 @@ namespace Terbritish.Content.Items.Weapons
 			Item.noMelee = true;
 			Item.rare = ItemRarityID.White;
 			Item.value = Item.sellPrice(0, 0, 0, 10);
-			Item.shoot = ModContent.ProjectileType<LondonProjectile>();
+			Item.shoot = ModContent.ProjectileType<LondonStab>();
 			Item.shootSpeed = 2.1f;
 
 		}
@@ -38,7 +38,7 @@ namespace Terbritish.Content.Items.Weapons
 
    		 public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
  		 {
-     		 if (type == ModContent.ProjectileType<LondonProjectile>())
+     		 if (type == ModContent.ProjectileType<LondonStab>())
      		 {
         	  damage = (int)(damage * 1.5f);
      		 }
@@ -56,7 +56,7 @@ namespace Terbritish.Content.Items.Weapons
 					source,
 					position,
 					velocity,
-					ModContent.ProjectileType<LondonProjectileThrown>(),
+					ModContent.ProjectileType<LondonThrown>(),
 					(int)(damage * 0.67f),
 					knockback,
 					player.whoAmI

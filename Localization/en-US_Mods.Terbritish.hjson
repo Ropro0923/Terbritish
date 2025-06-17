@@ -1,5 +1,4 @@
 Items: {
-
 	TeaLauncher: {
 		Tooltip: ""
 		DisplayName: Tea Launcher
@@ -75,6 +74,21 @@ Items: {
 		DisplayName: Uranium Knife
 		Tooltip: ""
 	}
+
+	PlutoniumShank: {
+		DisplayName: Plutonium Shank
+		Tooltip: ""
+	}
+
+	IronKnife: {
+		DisplayName: Iron Knife
+		Tooltip: ""
+	}
+
+	LeadKnife: {
+		DisplayName: Lead Knife
+		Tooltip: ""
+	}
 }
 
 DamageClasses: {
@@ -88,15 +102,21 @@ Projectiles: {
 	TeaLauncherProjectile.DisplayName: Tea Launcher Projectile
 	TeaDroplet.DisplayName: Tea Droplet
 	BritishBazookaRocket.DisplayName: British Bazooka Rocket
-	LondonProjectile.DisplayName: London Projectile
-	LondonProjectileThrown.DisplayName: London Projectile Thrown
-	CopperKnifeProj.DisplayName: Copper Knife Proj
 	CopperKnifeThrown.DisplayName: Copper Knife Thrown
 	TinKnifeProj.DisplayName: Tin Knife Proj
 	TinKnifeThrown.DisplayName: Tin Knife Thrown
-	UraniumKnifeStab.DisplayName: Uranium Knife Stab
 	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
-	}
+	PlutoniumShankThrown.DisplayName: Plutonium Shank Thrown
+	CopperKnifeStab.DisplayName: Copper Knife Stab
+	IronKnifeStab.DisplayName: Iron Knife Stab
+	IronKnifeThrown.DisplayName: Iron Knife Thrown
+	LeadKnifeStab.DisplayName: Lead Knife Stab
+	LeadKnifeThrown.DisplayName: Lead Knife Thrown
+	LondonStab.DisplayName: London Stab
+	LondonThrown.DisplayName: London Thrown
+	PlutoniumShankStab.DisplayName: Plutonium Shank Stab
+	UraniumKnifeStab.DisplayName: Uranium Knife Stab
+}
 
 Buffs: {
 	Scalding: {
@@ -155,17 +175,36 @@ Configs: {
 
 		TerMerica: {
 			Label: TerMerica
-			Tooltip: "Enables TerMerica compatibility"
+			Tooltip: Enables TerMerica compatibility
 		}
 
 		Spiritrum: {
 			Label: Spiritrum
-			Tooltip: "Enables Spiritrum compatibility"
+			Tooltip: Enables Spiritrum compatibility
 		}
 
 		MagnoliasMod: {
 			Label: Magnolia's Mod
-			Tooltip: "Enables Magnolia's Mod Compatibility"
+			Tooltip: Enables Magnolia's Mod Compatibility
+		}
+	}
+
+	ShtunConfig: {
+		DisplayName: Shtun Config
+
+		TerMerica: {
+			Label: Ter Merica
+			Tooltip: ""
+		}
+
+		Spiritrum: {
+			Label: Spiritrum
+			Tooltip: ""
+		}
+
+		MagnoliasMod: {
+			Label: Magnolias Mod
+			Tooltip: ""
 		}
 	}
 }

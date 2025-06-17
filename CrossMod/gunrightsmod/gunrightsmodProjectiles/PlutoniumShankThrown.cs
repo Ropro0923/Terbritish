@@ -4,10 +4,14 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Terbritish.Content.DamageClasses;
 using Terraria.Audio;
+using Terbritish.Core;
 
 
 namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
 {
+    [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
+    [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
+
     public class PlutoniumShankThrown : ModProjectile
     {
         public override void SetDefaults()
