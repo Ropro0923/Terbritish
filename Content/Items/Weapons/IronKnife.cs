@@ -39,12 +39,12 @@ namespace Terbritish.Content.Items.Weapons
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
 
-           
+
             if (type == ModContent.ProjectileType<IronKnifeStab>())
             {
                 damage = (int)(damage * 1.5f);
             }
-            
+
         }
         public override void AddRecipes()
         {
@@ -57,10 +57,15 @@ namespace Terbritish.Content.Items.Weapons
         {
             if (player.altFunctionUse == 2)
             {
-                Projectile.NewProjectile(source, position, velocity* 2.67f, ModContent.ProjectileType<IronKnifeThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
+                Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<IronKnifeThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
                 return false;
             }
             return true;
         }
+        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        {
+            target.AddBuff(BuffID.IronDeficiency, 600);
+        }
+
     }
 }

@@ -1,12 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
 using Terbritish.Content.Projectiles;
-
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-
 namespace Terbritish.Content.Items.Weapons
 {
     public class TinKnife : ModItem
@@ -27,44 +25,26 @@ namespace Terbritish.Content.Items.Weapons
             Item.noMelee = true;
             Item.rare = ItemRarityID.White;
             Item.value = Item.sellPrice(0, 0, 0, 10);
-            Item.shoot = ModContent.ProjectileType<TinKnifeProj>();
+            Item.shoot = ModContent.ProjectileType<TinKnifeStab>();
             Item.shootSpeed = 2.2f;
         }
-
         public override bool AltFunctionUse(Player player)
         {
             return true;
         }
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
-
-           
-            if (type == ModContent.ProjectileType<TinKnifeProj>())
+            if (type == ModContent.ProjectileType<TinKnifeStab>())
             {
                 damage = (int)(damage * 1.5f);
             }
-            
         }
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-
-
-            
-               
                 recipe.AddIngredient(ItemID.TinBar, 6);
-              
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();
-            
-
-
-
-
-
-
-
-
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
