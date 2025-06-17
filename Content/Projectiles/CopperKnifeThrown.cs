@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Terbritish2.Content.DamageClasses;
+using Terbritish.Content.DamageClasses;
 using Terraria.Audio;
 
 
