@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Terbritish2.Content.Items.Weapons
+namespace Terbritish.Content.Items.Weapons
 {
     public class PlutoniumShank : ModItem
     {
