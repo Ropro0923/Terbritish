@@ -99,6 +99,7 @@ Items: {
 DamageClasses: {
 	BritishDamageClass.DisplayName: British Damage Class
 	BritishDamage.DisplayName: british Damage
+	KnifeslingerDamage.DisplayName: Knifeslinger Damage
 }
 
 Projectiles: {
@@ -118,6 +119,8 @@ Projectiles: {
 	TinKnifeThrown.DisplayName: Tin Knife Thrown
 	UraniumKnifeStab.DisplayName: Uranium Knife Stab
 	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
+	FlyingKnifeProjectile.DisplayName: Flying Knife Projectile
+	FlyingKnifeThrown.DisplayName: Flying Knife Thrown
 }
 
 Buffs: {
