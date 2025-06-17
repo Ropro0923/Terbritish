@@ -6,7 +6,7 @@ using Terbritish.Content.DamageClasses;
 using Terraria.Audio;
 
 
-namespace Terbritish.Content.Projectiles
+namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
 {
     public class PlutoniumShankThrown : ModProjectile
     {
