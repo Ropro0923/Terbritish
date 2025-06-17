@@ -24,7 +24,8 @@ namespace Terbritish.Content.Items.Armour
 		}
 
 		public override void AddRecipes() {
-			CreateRecipe().AddIngredient<TeaLeaves>(12)
+			CreateRecipe()
+			.AddIngredient<TeaLeaves>(12)
 			.AddTile(TileID.WorkBenches)
 			.Register();
 		}

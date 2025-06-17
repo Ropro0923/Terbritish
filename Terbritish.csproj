@@ -13,6 +13,9 @@
     <Reference Include="Fargowiltas">
       <HintPath>lib\Fargowiltas.dll</HintPath>
     </Reference>
+    <Reference Include="gunrightsmod">
+      <HintPath>lib\gunrightsmod.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
