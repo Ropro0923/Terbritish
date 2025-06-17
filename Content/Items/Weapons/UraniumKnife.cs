@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
-using Terbritish2.Content.Projectiles;
+using Terbritish.Content.Projectiles;
 
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Terbritish2.Content.Items.Weapons
+namespace Terbritish.Content.Items.Weapons
 {
     public class UraniumKnife : ModItem
     {
