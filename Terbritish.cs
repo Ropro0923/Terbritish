@@ -19,12 +19,12 @@ namespace Terbritish
 	{
 		public override void Load()
 		{
-			//
+			TerbritishConfig.Instance = ModContent.GetInstance<TerbritishConfig>();
 		}
 
 		public override void Unload()
 		{
-			//
+			TerbritishConfig.Instance = null;
 		}
 	}
 

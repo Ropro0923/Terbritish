@@ -4,10 +4,10 @@ using Terraria.ModLoader.Config;
 namespace Terbritish
 {
     [BackgroundColor(32, 50, 32, 216)]
-    public class ShtunConfig : ModConfig
+    public class TerbritishConfig : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
-        public static ShtunConfig Instance;
+        public static TerbritishConfig Instance;
 
         [ReloadRequired]
         [BackgroundColor(60, 200, 60, 192)]

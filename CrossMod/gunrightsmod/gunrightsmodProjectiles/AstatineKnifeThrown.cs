@@ -14,6 +14,10 @@ namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
     [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
     public class AstatineKnifeThrown : ModProjectile
     {
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return TerbritishConfig.Instance != null && TerbritishConfig.Instance.TerMerica;
+        }
         public override void SetDefaults()
         {
             Projectile.width = 30;

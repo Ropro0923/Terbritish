@@ -12,6 +12,10 @@ namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
 {
     public class AstatineSplode : ModProjectile
     {
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return TerbritishConfig.Instance != null && TerbritishConfig.Instance.TerMerica;
+        }
         public override void SetStaticDefaults()
         {
 

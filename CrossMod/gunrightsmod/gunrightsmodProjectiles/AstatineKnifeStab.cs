@@ -14,6 +14,11 @@ namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
     // Values chosen mostly correspond to Iron Shortsword
     public class AstatineKnifeStab : ModProjectile
     {
+
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return TerbritishConfig.Instance != null && TerbritishConfig.Instance.TerMerica;
+        }
         public const int FadeInDuration = 4;
         public const int FadeOutDuration = 2;
 

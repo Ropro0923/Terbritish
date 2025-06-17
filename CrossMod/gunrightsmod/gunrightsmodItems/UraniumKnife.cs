@@ -15,6 +15,10 @@ namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodItems
     [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
     public class UraniumKnife : ModItem
     {
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return TerbritishConfig.Instance != null && TerbritishConfig.Instance.TerMerica;
+        }
         public override void SetDefaults()
         {
             Item.damage = 29;

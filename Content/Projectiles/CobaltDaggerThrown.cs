@@ -4,43 +4,34 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Terbritish.Content.DamageClasses;
 using Terraria.Audio;
-using Terbritish.Core;
 
 
-namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
+namespace Terbritish.Content.Projectiles
 {
-    [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
-    [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
-    public class UraniumKnifeThrown : ModProjectile
+    public class CobaltDaggerThrown : ModProjectile
     {
-        public override bool IsLoadingEnabled(Mod mod)
-        {
-            return TerbritishConfig.Instance != null && TerbritishConfig.Instance.TerMerica;
-        }
         public override void SetDefaults()
         {
             Projectile.width = 30;
             Projectile.height = 30;
             Projectile.friendly = true;
             Projectile.DamageType = ModContent.GetInstance<BritishDamage>();
-            Projectile.penetrate = 3;
+            Projectile.penetrate = 2;
             Projectile.timeLeft = 600;
             Projectile.tileCollide = true;
             Projectile.ignoreWater = false;
             Projectile.extraUpdates = 1;
-            Projectile.usesLocalNPCImmunity = true;
-            Projectile.localNPCHitCooldown = 15;
         }
 
         public override void AI()
         {
 
-            Projectile.rotation += 0.135f;
+            Projectile.rotation += 0.105f;
             Projectile.ai[0] += 1f;
             if (Projectile.ai[0] >= 25f)
             {
                 Projectile.ai[0] = 25f;
-                Projectile.velocity.Y += 0.165f;
+                Projectile.velocity.Y += 0.175f;
             }
             if (Projectile.velocity.Y > 15f)
             {
