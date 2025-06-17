@@ -21,23 +21,23 @@ namespace Terbritish.Content.Items.Weapons
 		public override void SetDefaults()
 		{
 			Item.damage = 50;
-            Item.DamageType = ModContent.GetInstance<BritishDamage>();
-            Item.width = 40;
-            Item.height = 20;
-            Item.useTime = 20;
-            Item.useAnimation = 20;
-            Item.useStyle = ItemUseStyleID.Shoot;
-            Item.noMelee = true;
-            Item.knockBack = 4;
-            Item.value = Item.buyPrice(0, 50, 0, 0);
-            Item.rare = ItemRarityID.LightRed;
-            Item.UseSound = SoundID.Item11;
-            Item.autoReuse = true;
-            Item.shoot = ProjectileID.RocketI;
-            Item.shootSpeed = 10f;
-            Item.useAmmo = AmmoID.Rocket;
+			Item.DamageType = ModContent.GetInstance<BritishDamage>();
+			Item.width = 40;
+			Item.height = 20;
+			Item.useTime = 20;
+			Item.useAnimation = 20;
+			Item.useStyle = ItemUseStyleID.Shoot;
+			Item.noMelee = true;
+			Item.knockBack = 4;
+			Item.value = Item.buyPrice(0, 50, 0, 0);
+			Item.rare = ItemRarityID.LightRed;
+			Item.UseSound = SoundID.Item11;
+			Item.autoReuse = true;
+			Item.shoot = ProjectileID.RocketI;
+			Item.shootSpeed = 10f;
+			Item.useAmmo = AmmoID.Rocket;
+			Item.scale = 0.8f;
 		}
-
 
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{

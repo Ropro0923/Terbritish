@@ -97,6 +97,7 @@ Projectiles: {
 	BritishGrenade.DisplayName: British Grenade
 	BritishBazookaRocket.DisplayName: British Bazooka Rocket
 	LondonProjectile.DisplayName: London Projectile
+	LondonProjectileThrown.DisplayName: London Projectile Thrown
 }
 
 Buffs: {
