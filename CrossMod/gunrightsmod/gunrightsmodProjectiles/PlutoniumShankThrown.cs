@@ -15,7 +15,7 @@ namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
             Projectile.width = 30;
             Projectile.height = 30;
             Projectile.friendly = true;
-            Projectile.DamageType = ModContent.GetInstance<britishDamage>();
+            Projectile.DamageType = ModContent.GetInstance<BritishDamage>();
             Projectile.penetrate = 4;
             Projectile.timeLeft = 600;
             Projectile.tileCollide = true;
