@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
-using Terbritish2.Content.Projectiles;
+using Terbritish.Content.Projectiles;
 
 using Terraria;
 using Terraria.DataStructures;
