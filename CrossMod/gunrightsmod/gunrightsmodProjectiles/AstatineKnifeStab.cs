@@ -2,9 +2,12 @@
 using Terraria;
 using Terraria.Enums;
 using Terraria.ModLoader;
+using Terbritish.Core;
 
-namespace Terbritish2.Content.Projectiles
+namespace Terbritish.Content.Projectiles
 {
+    [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
+    [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
     // Shortsword projectiles are handled in a special way with how they draw and damage things
     // The "hitbox" itself is closer to the player, the sprite is centered on it
     // However the interactions with the world will occur offset from this hitbox, closer to the sword's tip (CutTiles, Colliding)
@@ -48,8 +51,8 @@ namespace Terbritish2.Content.Projectiles
             Vector2 Peanits = Projectile.Center - new Vector2(Main.rand.Next(-1, 1), 2);
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), Peanits,
             new Vector2(1, 0).RotatedBy((Peanits).DirectionTo(Projectile.Center).ToRotation()),
-            ModContent.ProjectileType<AstatineSplode>(), (int)(Projectile.damage*1.25f), Projectile.knockBack, Projectile.owner);
-          
+            ModContent.ProjectileType<AstatineSplode>(), (int)(Projectile.damage * 1.25f), Projectile.knockBack, Projectile.owner);
+
         }
         public override void AI()
         {

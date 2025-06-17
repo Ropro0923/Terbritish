@@ -2,12 +2,15 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Terbritish2.Content.DamageClasses;
+using Terbritish.Content.DamageClasses;
 using Terraria.Audio;
+using Terbritish.Core;
 
 
-namespace Terbritish2.Content.Projectiles
+namespace Terbritish.Content.Projectiles
 {
+    [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
+    [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
     public class AstatineKnifeThrown : ModProjectile
     {
         public override void SetDefaults()
@@ -15,7 +18,7 @@ namespace Terbritish2.Content.Projectiles
             Projectile.width = 30;
             Projectile.height = 30;
             Projectile.friendly = true;
-            Projectile.DamageType = ModContent.GetInstance<britishDamage>();
+            Projectile.DamageType = ModContent.GetInstance<BritishDamage>();
             Projectile.penetrate = 1;
             Projectile.timeLeft = 600;
             Projectile.tileCollide = true;

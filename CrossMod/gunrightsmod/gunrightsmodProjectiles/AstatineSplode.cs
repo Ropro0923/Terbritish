@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Terbritish2.Content.Projectiles
+namespace Terbritish.Content.Projectiles
 {
     public class AstatineSplode : ModProjectile
     {
