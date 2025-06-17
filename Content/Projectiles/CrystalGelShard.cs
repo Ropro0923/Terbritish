@@ -1,5 +1,5 @@
 ﻿
-using Terbritish2.Content.DamageClasses;
+using Terbritish.Content.DamageClasses;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Terbritish2.Content.Projectiles
+namespace Terbritish.Content.Projectiles
 {
     public class CrystalGelShard : ModProjectile
     {
