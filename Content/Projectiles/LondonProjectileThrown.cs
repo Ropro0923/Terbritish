@@ -25,17 +25,16 @@ namespace Terbritish.Content.Projectiles
 
         public override void AI()
         {
-
-            Projectile.rotation += 0.115f;
+            Projectile.rotation += 0.15f;
             Projectile.ai[0] += 1f;
             if (Projectile.ai[0] >= 25f)
             {
-            Projectile.ai[0] = 25f;
-            Projectile.velocity.Y += 0.175f;
+                Projectile.ai[0] = 25f;
+                Projectile.velocity.Y += 0.2f;
             }
             if (Projectile.velocity.Y > 15f)
             {
-            Projectile.velocity.Y = 17f;
+                Projectile.velocity.Y = 17f;
             }
         }
     }
