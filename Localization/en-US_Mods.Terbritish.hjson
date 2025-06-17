@@ -79,12 +79,26 @@ Items: {
 		Tooltip: ""
 		DisplayName: Bren Gun
 	}
+
+	CopperKnife: {
+		DisplayName: Copper Knife
+		Tooltip: ""
+	}
+
+	TinKnife: {
+		DisplayName: Tin Knife
+		Tooltip: ""
+	}
+
+	UraniumKnife: {
+		DisplayName: Uranium Knife
+		Tooltip: ""
+	}
 }
 
 DamageClasses: {
 	BritishDamageClass.DisplayName: British Damage Class
-	BritishDamage.DisplayName: British Damage
-	britishDamage.DisplayName: british Damage
+	BritishDamage.DisplayName: british Damage
 }
 
 Projectiles: {
@@ -98,6 +112,12 @@ Projectiles: {
 	BritishBazookaRocket.DisplayName: British Bazooka Rocket
 	LondonProjectile.DisplayName: London Projectile
 	LondonProjectileThrown.DisplayName: London Projectile Thrown
+	CopperKnifeProj.DisplayName: Copper Knife Proj
+	CopperKnifeThrown.DisplayName: Copper Knife Thrown
+	TinKnifeProj.DisplayName: Tin Knife Proj
+	TinKnifeThrown.DisplayName: Tin Knife Thrown
+	UraniumKnifeStab.DisplayName: Uranium Knife Stab
+	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
 }
 
 Buffs: {

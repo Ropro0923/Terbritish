@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terbritish.Core;
 
 
-namespace Terbritish.Content.Projectiles
+namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
 {
     [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
     [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]

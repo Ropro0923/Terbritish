@@ -7,8 +7,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terbritish.Core;
 using gunrightsmod.Content.Items;
+using Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles;
 
-namespace Terbritish.Crossmod.gunrightsmod.gunrightsmodItems
+namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodItems
 {
     [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
     [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
