@@ -94,6 +94,21 @@ Items: {
 		DisplayName: Astatine Knife
 		Tooltip: ""
 	}
+
+	Bloodslinger: {
+		DisplayName: Bloodslinger
+		Tooltip: ""
+	}
+
+	CobaltDagger: {
+		DisplayName: Cobalt Dagger
+		Tooltip: ""
+	}
+
+	DawnsEnd: {
+		DisplayName: Dawns End
+		Tooltip: ""
+	}
 }
 
 DamageClasses: {
@@ -124,6 +139,13 @@ Projectiles: {
 	AstatineKnifeStab.DisplayName: Astatine Knife Stab
 	AstatineKnifeThrown.DisplayName: Astatine Knife Thrown
 	AstatineSplode.DisplayName: Astatine Splode
+	BloodslingerStab.DisplayName: Bloodslinger Stab
+	BloodslingerThrown.DisplayName: Bloodslinger Thrown
+	CobaltDaggerStab.DisplayName: Cobalt Dagger Stab
+	CobaltDaggerThrown.DisplayName: Cobalt Dagger Thrown
+	CorruptVortex.DisplayName: Corrupt Vortex
+	DawnsEndStab.DisplayName: Dawns End Stab
+	DawnsEndThrown.DisplayName: Dawns End Thrown
 }
 
 Buffs: {

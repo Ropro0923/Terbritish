@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using System;
 using Terbritish.Content.Projectiles;
 using Terraria;
@@ -10,11 +10,11 @@ using Terbritish.Content.Items.Weapons;
 
 namespace Terbritish.Content.Items.Weapons
 {
-    public class IronKnife : ModItem
+    public class PalladiumKnife : ModItem
     {
         public override void SetDefaults()
         {
-            Item.damage = 8;
+            Item.damage = 120;
             Item.knockBack = 1.75f;
             Item.useStyle = ItemUseStyleID.Rapier;
             Item.useAnimation = 16;
@@ -28,7 +28,7 @@ namespace Terbritish.Content.Items.Weapons
             Item.noMelee = true;
             Item.rare = ItemRarityID.White;
             Item.value = Item.sellPrice(0, 0, 0, 10);
-            Item.shoot = ModContent.ProjectileType<IronKnifeStab>();
+            Item.shoot = ModContent.ProjectileType<PalladiumKnifeStab>();
             Item.shootSpeed = 2.1f;
         }
 
@@ -40,7 +40,7 @@ namespace Terbritish.Content.Items.Weapons
         {
 
 
-            if (type == ModContent.ProjectileType<IronKnifeStab>())
+            if (type == ModContent.ProjectileType<PalladiumKnifeStab>())
             {
                 damage = (int)(damage * 1.5f);
             }
@@ -57,7 +57,7 @@ namespace Terbritish.Content.Items.Weapons
         {
             if (player.altFunctionUse == 2)
             {
-                Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<IronKnifeThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
+                Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<PalladiumKnifeThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
                 return false;
             }
             return true;

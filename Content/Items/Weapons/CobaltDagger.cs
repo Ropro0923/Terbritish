@@ -14,7 +14,7 @@ namespace Terbritish.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 12;
+            Item.damage = 77;
             Item.knockBack = 1.75f;
             Item.useStyle = ItemUseStyleID.Rapier;
             Item.useAnimation = 16;

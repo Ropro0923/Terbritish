@@ -5,16 +5,14 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terbritish.Content.DamageClasses;
-using Terbritish.Content.Items.Weapons;
 
 namespace Terbritish.Content.Items.Weapons
 {
-    public class IronKnife : ModItem
+    public class AdamantiteShiv : ModItem
     {
         public override void SetDefaults()
         {
-            Item.damage = 8;
+            Item.damage = 87;
             Item.knockBack = 1.75f;
             Item.useStyle = ItemUseStyleID.Rapier;
             Item.useAnimation = 16;
@@ -28,7 +26,7 @@ namespace Terbritish.Content.Items.Weapons
             Item.noMelee = true;
             Item.rare = ItemRarityID.White;
             Item.value = Item.sellPrice(0, 0, 0, 10);
-            Item.shoot = ModContent.ProjectileType<IronKnifeStab>();
+            Item.shoot = ModContent.ProjectileType<AdamantiteShivStab>();
             Item.shootSpeed = 2.1f;
         }
 
@@ -39,25 +37,25 @@ namespace Terbritish.Content.Items.Weapons
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
 
-
-            if (type == ModContent.ProjectileType<IronKnifeStab>())
+           
+            if (type == ModContent.ProjectileType<AdamantiteShivStab>())
             {
                 damage = (int)(damage * 1.5f);
             }
-
+            
         }
         public override void AddRecipes()
         {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.IronBar, 6);
-            recipe.AddTile(TileID.Anvils);
-            recipe.Register();
+            Recipe recipe = CreateRecipe();  
+                recipe.AddIngredient(ItemID.AdamantiteBar, 6);
+                recipe.AddTile(TileID.Anvils);
+                recipe.Register();
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.altFunctionUse == 2)
             {
-                Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<IronKnifeThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
+                Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<AdamantiteShivThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
                 return false;
             }
             return true;
