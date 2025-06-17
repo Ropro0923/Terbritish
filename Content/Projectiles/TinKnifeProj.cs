@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Enums;
 using Terraria.ModLoader;
 
-namespace Terbritish2.Content.Projectiles
+namespace Terbritish.Content.Projectiles
 {
     // Shortsword projectiles are handled in a special way with how they draw and damage things
     // The "hitbox" itself is closer to the player, the sprite is centered on it
