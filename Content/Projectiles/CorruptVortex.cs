@@ -15,7 +15,7 @@ namespace Terbritish.Content.Projectiles
             Projectile.width = 45;
             Projectile.height = 45;
             Projectile.friendly = true;
-            Projectile.DamageType = ModContent.GetInstance<britishDamage>();
+            Projectile.DamageType = ModContent.GetInstance<BritishDamage>();
             Projectile.penetrate = 6;
             Projectile.timeLeft = 36;
             Projectile.tileCollide = false;

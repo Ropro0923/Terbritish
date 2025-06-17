@@ -89,6 +89,11 @@ Items: {
 		DisplayName: Lead Knife
 		Tooltip: ""
 	}
+
+	AstatineKnife: {
+		DisplayName: Astatine Knife
+		Tooltip: ""
+	}
 }
 
 DamageClasses: {
@@ -116,6 +121,9 @@ Projectiles: {
 	LondonThrown.DisplayName: London Thrown
 	PlutoniumShankStab.DisplayName: Plutonium Shank Stab
 	UraniumKnifeStab.DisplayName: Uranium Knife Stab
+	AstatineKnifeStab.DisplayName: Astatine Knife Stab
+	AstatineKnifeThrown.DisplayName: Astatine Knife Thrown
+	AstatineSplode.DisplayName: Astatine Splode
 }
 
 Buffs: {

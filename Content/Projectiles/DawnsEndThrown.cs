@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Terbritish2.Content.DamageClasses;
+using Terbritish.Content.DamageClasses;
 using Terraria.Audio;
 
 
@@ -15,7 +15,7 @@ namespace Terbritish.Content.Projectiles
             Projectile.width = 30;
             Projectile.height = 30;
             Projectile.friendly = true;
-            Projectile.DamageType = ModContent.GetInstance<britishDamage>();
+            Projectile.DamageType = ModContent.GetInstance<BritishDamage>();
             Projectile.penetrate = 1;
             Projectile.timeLeft = 600;
             Projectile.tileCollide = true;

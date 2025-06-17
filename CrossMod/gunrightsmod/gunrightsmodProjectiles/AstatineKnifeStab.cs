@@ -4,7 +4,7 @@ using Terraria.Enums;
 using Terraria.ModLoader;
 using Terbritish.Core;
 
-namespace Terbritish.Content.Projectiles
+namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles
 {
     [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
     [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
@@ -54,10 +54,14 @@ namespace Terbritish.Content.Projectiles
             ModContent.ProjectileType<AstatineSplode>(), (int)(Projectile.damage * 1.25f), Projectile.knockBack, Projectile.owner);
 
         }
+
         public override void AI()
         {
             Player player = Main.player[Projectile.owner];
-
+            if (Projectile.timeLeft == 1) // Only offset once to avoid drifting
+            {
+                Projectile.position += new Vector2(0, -30f);
+            }
             Timer += 1;
             if (Timer >= TotalDuration)
             {

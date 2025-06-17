@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using Terbritish.Content.Projectiles;
 using gunrightsmod.Content.Items;
 using Terbritish.Core;
-
+using Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Terbritish.Content.Items.Weapons
+namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodItems
 {
     [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
     [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
@@ -53,7 +53,6 @@ namespace Terbritish.Content.Items.Weapons
             {
                 damage = (int)(damage * 1.5f);
             }
-
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
