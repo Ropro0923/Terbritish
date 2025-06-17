@@ -1,27 +1,8 @@
 Items: {
-	BritishShortsword: {
-		Tooltip: ""
-		DisplayName: British Shortsword
-	}
-
-	Shank: {
-		Tooltip: ""
-		DisplayName: Shank
-	}
-
-	FlamingYoyo: {
-		DisplayName: Flaming Yoyo
-		Tooltip: ""
-	}
 
 	TeaLauncher: {
 		Tooltip: ""
 		DisplayName: Tea Launcher
-	}
-
-	ExampleCustomAmmoGun: {
-		Tooltip: ""
-		DisplayName: Example Custom Ammo Gun
 	}
 
 	BiscuitBeater: {
@@ -97,19 +78,15 @@ Items: {
 }
 
 DamageClasses: {
-	BritishDamageClass.DisplayName: British Damage Class
-	BritishDamage.DisplayName: british Damage
+	BritishDamage.DisplayName: British Damage
 	KnifeslingerDamage.DisplayName: Knifeslinger Damage
 }
 
 Projectiles: {
-	FlamingYoyoProjectile.DisplayName: Flaming Yoyo Projectile
 	TeaProjectile.DisplayName: Tea Projectile
 	BiscuitBeaterProjectile.DisplayName: Biscuit Beater Projectile
 	TeaLauncherProjectile.DisplayName: Tea Launcher Projectile
 	TeaDroplet.DisplayName: Tea Droplet
-	BouncyGrenade.DisplayName: Bouncy Grenade
-	BritishGrenade.DisplayName: British Grenade
 	BritishBazookaRocket.DisplayName: British Bazooka Rocket
 	LondonProjectile.DisplayName: London Projectile
 	LondonProjectileThrown.DisplayName: London Projectile Thrown
@@ -119,13 +96,11 @@ Projectiles: {
 	TinKnifeThrown.DisplayName: Tin Knife Thrown
 	UraniumKnifeStab.DisplayName: Uranium Knife Stab
 	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
-	FlyingKnifeProjectile.DisplayName: Flying Knife Projectile
-	FlyingKnifeThrown.DisplayName: Flying Knife Thrown
-}
+	}
 
 Buffs: {
 	Scalding: {
-		Description: Mods.Terbritish.Buffs.Scalding.Description
+		Description: You are burning from the piping hot tea.
 		DisplayName: Scalding
 	}
 
@@ -160,12 +135,12 @@ NPCs: {
 			LoveNPC: I love {NPCName}.
 			DislikeBiome: I dislike {BiomeName}.
 			LikeBiome: I like {BiomeName}.
-			HateCrowded: I hate how crowded I am.
-			DislikeCrowded: I dislike how crowded I am.
-			LoveSpace: I love having so much space.
-			FarFromHome: I am too far from home.
-			NoHome: I hate not having a home.
-			Content: I am content.
+			HateCrowded: I truly despise crowded I am.
+			DislikeCrowded: The amount of people makes me uncomfortable.
+			LoveSpace: I adore the space I have. Nobody to bother me.
+			FarFromHome: I miss home...
+			NoHome: I'm homeless. Great.
+			Content: I am happy, thank you very much.
 		}
 
 		DisplayName: Dapper Chapper
@@ -175,22 +150,22 @@ NPCs: {
 }
 
 Configs: {
-	ShtunConfig: {
-		DisplayName: Shtun Config
+	TerbritishConfig: {
+		DisplayName: TerbritishConfig
 
 		TerMerica: {
-			Label: Ter Merica
-			Tooltip: ""
+			Label: TerMerica
+			Tooltip: "Enables TerMerica compatibility"
 		}
 
 		Spiritrum: {
 			Label: Spiritrum
-			Tooltip: ""
+			Tooltip: "Enables Spiritrum compatibility"
 		}
 
 		MagnoliasMod: {
-			Label: Magnolias Mod
-			Tooltip: ""
+			Label: Magnolia's Mod
+			Tooltip: "Enables Magnolia's Mod Compatibility"
 		}
 	}
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Terbritish.Content.Projectiles;
+using Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles;
 
 using Terraria;
 using Terraria.DataStructures;
