@@ -1,47 +1,49 @@
+DamageClasses: {
+	BritishDamage.DisplayName: British Damage
+	KnifeslingerDamage.DisplayName: Knifeslinger Damage
+}
+
+NPCs: {
+	DapperChapper: {
+		Upgraded: Mods.Terbritish.NPCs.DapperChapper.Upgraded
+		DisplayName: Dapper Chapper
+
+		TownNPCMood: {
+			Content: I am content.
+			NoHome: I hate not having a home.
+			FarFromHome: I am too far from home.
+			LoveSpace: I love having so much space.
+			DislikeCrowded: I dislike how crowded I am.
+			HateCrowded: I hate how crowded I am.
+			LikeBiome: I like {BiomeName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LoveNPC: I love {NPCName}.
+			LikeNPC: I like {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			HateNPC: I hate {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+
+		Census.SpawnCondition: Have a Cuppa' Tea in your inventory
+	}
+}
+
+Buffs: {
+	Scalding: {
+		DisplayName: Scalding
+		Description: Your skin is burning from the piping hot tea!
+	}
+}
+
 Items: {
-	TeaLauncher: {
-		Tooltip: ""
-		DisplayName: Tea Launcher
-	}
-
-	BiscuitBeater: {
-		Tooltip: ""
-		DisplayName: Biscuit Beater
-	}
-
-	CuppaTea: {
-		DisplayName: Cuppa Tea
-		Tooltip: ""
-	}
-
-	Ceramic: {
-		DisplayName: Ceramic
-		Tooltip: ""
-	}
-
-	TeaLeaves: {
-		DisplayName: Tea Leaves
-		Tooltip: ""
-	}
-
-	BritishBazooka: {
-		DisplayName: British Bazooka
-		Tooltip: ""
-	}
-
-	London: {
-		DisplayName: London
-		Tooltip: ""
-	}
-
-	TeaLeafHelmet: {
-		SetBonus: Mods.Terbritish.Items.TeaLeafHelmet.SetBonus
-		DisplayName: Tea Leaf Helmet
-		Tooltip: ""
-	}
-
 	TeaLeafChestplate: {
 		DisplayName: Tea Leaf Chestplate
+		Tooltip: ""
+	}
+
+	TeaLeafHat: {
+		DisplayName: Tea Leaf Hat
 		Tooltip: ""
 	}
 
@@ -50,14 +52,44 @@ Items: {
 		Tooltip: ""
 	}
 
-	DapperChapper: {
+	TeaLeaves: {
+		DisplayName: Tea Leaves
 		Tooltip: ""
-		DisplayName: Dapper Chapper
+	}
+
+	Ceramic: {
+		DisplayName: Ceramic
+		Tooltip: ""
+	}
+
+	AdamantiteShiv: {
+		DisplayName: Adamantite Shiv
+		Tooltip: ""
+	}
+
+	BiscuitBeater: {
+		DisplayName: Biscuit Beater
+		Tooltip: ""
+	}
+
+	Bloodslinger: {
+		DisplayName: Bloodslinger
+		Tooltip: ""
 	}
 
 	BrenGun: {
-		Tooltip: ""
 		DisplayName: Bren Gun
+		Tooltip: ""
+	}
+
+	BritishBazooka: {
+		DisplayName: British Bazooka
+		Tooltip: ""
+	}
+
+	CobaltDagger: {
+		DisplayName: Cobalt Dagger
+		Tooltip: ""
 	}
 
 	CopperKnife: {
@@ -65,18 +97,18 @@ Items: {
 		Tooltip: ""
 	}
 
-	TinKnife: {
-		DisplayName: Tin Knife
+	CuppaTea: {
+		DisplayName: Cuppa Tea
 		Tooltip: ""
 	}
 
-	UraniumKnife: {
-		DisplayName: Uranium Knife
+	DawnsEnd: {
+		DisplayName: Dawns End
 		Tooltip: ""
 	}
 
-	PlutoniumShank: {
-		DisplayName: Plutonium Shank
+	GoldKnife: {
+		DisplayName: Gold Knife
 		Tooltip: ""
 	}
 
@@ -90,151 +122,123 @@ Items: {
 		Tooltip: ""
 	}
 
+	London: {
+		DisplayName: London
+		Tooltip: ""
+	}
+
+	MythrilShiv: {
+		DisplayName: Mythril Shiv
+		Tooltip: ""
+	}
+
+	OrichalcumShiv: {
+		DisplayName: Orichalcum Shiv
+		Tooltip: ""
+	}
+
+	PalladiumKnife: {
+		DisplayName: Palladium Knife
+		Tooltip: ""
+	}
+
+	QueensShank: {
+		DisplayName: Queen's Shank
+		Tooltip: ""
+	}
+
+	TeaLauncher: {
+		DisplayName: Tea Launcher
+		Tooltip: ""
+	}
+
+	TinKnife: {
+		DisplayName: Tin Knife
+		Tooltip: ""
+	}
+
 	AstatineKnife: {
 		DisplayName: Astatine Knife
 		Tooltip: ""
 	}
 
-	Bloodslinger: {
-		DisplayName: Bloodslinger
+	PlutoniumShank: {
+		DisplayName: Plutonium Shank
 		Tooltip: ""
 	}
 
-	CobaltDagger: {
-		DisplayName: Cobalt Dagger
+	UraniumKnife: {
+		DisplayName: Uranium Knife
 		Tooltip: ""
 	}
 
-	DawnsEnd: {
-		DisplayName: Dawns End
+	DapperChapper: {
+		DisplayName: Dapper Chapper
 		Tooltip: ""
 	}
-}
-
-DamageClasses: {
-	BritishDamage.DisplayName: British Damage
-	KnifeslingerDamage.DisplayName: Knifeslinger Damage
 }
 
 Projectiles: {
-	TeaProjectile.DisplayName: Tea Projectile
+	AdamantiteShivStab.DisplayName: Adamantite Shiv Stab
+	AdamantiteShivThrown.DisplayName: Adamantite Shiv Thrown
 	BiscuitBeaterProjectile.DisplayName: Biscuit Beater Projectile
-	TeaLauncherProjectile.DisplayName: Tea Launcher Projectile
-	TeaDroplet.DisplayName: Tea Droplet
-	BritishBazookaRocket.DisplayName: British Bazooka Rocket
-	CopperKnifeThrown.DisplayName: Copper Knife Thrown
-	TinKnifeProj.DisplayName: Tin Knife Proj
-	TinKnifeThrown.DisplayName: Tin Knife Thrown
-	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
-	PlutoniumShankThrown.DisplayName: Plutonium Shank Thrown
+	BloodslingerStab.DisplayName: Bloodslinger Stab
+	BloodslingerThrown.DisplayName: Bloodslinger Thrown
+	CobaltDaggerStab.DisplayName: Cobalt Dagger Stab
+	CobaltDaggerThrown.DisplayName: Cobalt Dagger Thrown
 	CopperKnifeStab.DisplayName: Copper Knife Stab
+	CopperKnifeThrown.DisplayName: Copper Knife Thrown
+	CorruptVortex.DisplayName: Corrupt Vortex
+	CrystalGelShard.DisplayName: Crystal Gel Shard
+	DawnsEndStab.DisplayName: Dawns End Stab
+	DawnsEndThrown.DisplayName: Dawns End Thrown
+	GoldKnifeStab.DisplayName: Gold Knife Stab
+	GoldKnifeThrown.DisplayName: Gold Knife Thrown
 	IronKnifeStab.DisplayName: Iron Knife Stab
 	IronKnifeThrown.DisplayName: Iron Knife Thrown
 	LeadKnifeStab.DisplayName: Lead Knife Stab
 	LeadKnifeThrown.DisplayName: Lead Knife Thrown
 	LondonStab.DisplayName: London Stab
 	LondonThrown.DisplayName: London Thrown
-	PlutoniumShankStab.DisplayName: Plutonium Shank Stab
-	UraniumKnifeStab.DisplayName: Uranium Knife Stab
+	MythrilShivStab.DisplayName: Mythril Shiv Stab
+	MythrilShivThrown.DisplayName: Mythril Shiv Thrown
+	OrichalcumShivStab.DisplayName: Orichalcum Shiv Stab
+	OrichalcumShivThrown.DisplayName: Orichalcum Shiv Thrown
+	PalladiumKnifeStab.DisplayName: Palladium Knife Stab
+	PalladiumKnifeThrown.DisplayName: Palladium Knife Thrown
+	QueensShankStab.DisplayName: Queens Shank Stab
+	QueensShankThrown.DisplayName: Queens Shank Thrown
+	TeaDroplet.DisplayName: Tea Droplet
+	TeaLauncherProjectile.DisplayName: Tea Launcher Projectile
+	TeaProjectile.DisplayName: Tea Projectile
+	TinKnifeStab.DisplayName: Tin Knife Stab
+	TinKnifeThrown.DisplayName: Tin Knife Thrown
 	AstatineKnifeStab.DisplayName: Astatine Knife Stab
 	AstatineKnifeThrown.DisplayName: Astatine Knife Thrown
 	AstatineSplode.DisplayName: Astatine Splode
-	BloodslingerStab.DisplayName: Bloodslinger Stab
-	BloodslingerThrown.DisplayName: Bloodslinger Thrown
-	CobaltDaggerStab.DisplayName: Cobalt Dagger Stab
-	CobaltDaggerThrown.DisplayName: Cobalt Dagger Thrown
-	CorruptVortex.DisplayName: Corrupt Vortex
-	DawnsEndStab.DisplayName: Dawns End Stab
-	DawnsEndThrown.DisplayName: Dawns End Thrown
-}
-
-Buffs: {
-	Scalding: {
-		Description: You are burning from the piping hot tea.
-		DisplayName: Scalding
-	}
-
-	ScaldingNPC: {
-		DisplayName: Scalding NPC
-		Description: Mods.Terbritish.Buffs.ScaldingNPC.Description
-	}
-}
-
-Dialogue: {
-	DapperChapper: {
-		StandardDialogue1: Well Bob’s your uncle
-		StandardDialogue2: I just can't figure out why I'm here. It's quite gobsmacking.
-		StandardDialogue3: Well, this isn't the mall.
-		StandardDialogue4: It's "Teh-RAH-ria"
-		CommonDialogue: Fish and chips my beloved
-		RareDialogue: Fancy a cuppa tea and crumpets?
-		TalkALot: Oi! Get out of here already!
-	}
-}
-
-Bestiary.DapperChapper_1: Hailing from a mysterious land known as "London." Not much is known about this mysterious species.
-
-NPCs: {
-	DapperChapper: {
-		TownNPCMood: {
-			Princess_LovesNPC: I like {NPCName}.
-			LikeNPC_Princess: I like {NPCName}.
-			HateNPC: I hate {NPCName}.
-			DislikeNPC: I dislike {NPCName}.
-			LikeNPC: I like {NPCName}.
-			LoveNPC: I love {NPCName}.
-			DislikeBiome: I dislike {BiomeName}.
-			LikeBiome: I like {BiomeName}.
-			HateCrowded: I truly despise crowded I am.
-			DislikeCrowded: The amount of people makes me uncomfortable.
-			LoveSpace: I adore the space I have. Nobody to bother me.
-			FarFromHome: I miss home...
-			NoHome: I'm homeless. Great.
-			Content: I am happy, thank you very much.
-		}
-
-		DisplayName: Dapper Chapper
-		Upgraded: Mods.Terbritish.NPCs.DapperChapper.Upgraded
-		Census.SpawnCondition: Conditions unknown
-	}
+	PlutoniumShankStab.DisplayName: Plutonium Shank Stab
+	PlutoniumShankThrown.DisplayName: Plutonium Shank Thrown
+	UraniumKnifeStab.DisplayName: Uranium Knife Stab
+	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
 }
 
 Configs: {
 	TerbritishConfig: {
-		DisplayName: TerbritishConfig
+		DisplayName: Terbritish Config
 
 		TerMerica: {
 			Label: TerMerica
-			Tooltip: Enables TerMerica compatibility
+			Tooltip: "Enables TerMerica compatibility"
 		}
 
 		Spiritrum: {
-			Label: Spiritrum
-			Tooltip: Enables Spiritrum compatibility
+			Label: Spectrum
+			Tooltip: "Enables Spectrum compatibility"
 		}
 
 		MagnoliasMod: {
 			Label: Magnolia's Mod
-			Tooltip: Enables Magnolia's Mod Compatibility
-		}
-	}
-
-	ShtunConfig: {
-		DisplayName: Shtun Config
-
-		TerMerica: {
-			Label: Ter Merica
-			Tooltip: ""
-		}
-
-		Spiritrum: {
-			Label: Spiritrum
-			Tooltip: ""
-		}
-
-		MagnoliasMod: {
-			Label: Magnolias Mod
-			Tooltip: ""
+			Tooltip: "Enables Spectrum compatibility"
 		}
 	}
 }

@@ -9,7 +9,7 @@ namespace Terbritish.Content.Items.Armour
 	// The AutoloadEquip attribute automatically attaches an equip texture to this item.
 	// Providing the EquipType.Head value here will result in TML expecting a X_Head.png file to be placed next to the item's main texture.
 	[AutoloadEquip(EquipType.Head)]
-	public class TeaLeafHelmet : ModItem
+	public class TeaLeafHat : ModItem
 	{
 		public override void SetDefaults()
         {
