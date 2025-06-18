@@ -62,10 +62,5 @@ namespace Terbritish.Content.Items.Weapons
             }
             return true;
         }
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
-        {
-            target.AddBuff(BuffID.LeadPoisoning, 600);
-        }
-
     }
 }
