@@ -14,7 +14,6 @@ namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodItems
 {
     [ExtendsFromMod(ModCompatibility.gunrightsmod.Name)]
     [JITWhenModsEnabled(ModCompatibility.gunrightsmod.Name)]
-
     public class AstatineKnife : ModItem
     {
 

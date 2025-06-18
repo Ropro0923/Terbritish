@@ -176,6 +176,11 @@ Items: {
 		DisplayName: Dapper Chapper
 		Tooltip: ""
 	}
+
+	PrecipiceBlade: {
+		DisplayName: Precipice Blade
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -220,6 +225,9 @@ Projectiles: {
 	PlutoniumShankThrown.DisplayName: Plutonium Shank Thrown
 	UraniumKnifeStab.DisplayName: Uranium Knife Stab
 	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
+	PrecipiceBladeThrown.DisplayName: Precipice Blade Thrown
+	PrecipiceBladeStab.DisplayName: Precipice Blade Stab
+	NapalmBad.DisplayName: Napalm Bad
 }
 
 Configs: {
@@ -228,17 +236,17 @@ Configs: {
 
 		TerMerica: {
 			Label: TerMerica
-			Tooltip: "Enables TerMerica compatibility"
+			Tooltip: Enables TerMerica compatibility
 		}
 
 		Spiritrum: {
 			Label: Spectrum
-			Tooltip: "Enables Spectrum compatibility"
+			Tooltip: Enables Spectrum compatibility
 		}
 
 		MagnoliasMod: {
 			Label: Magnolia's Mod
-			Tooltip: "Enables Spectrum compatibility"
+			Tooltip: Enables Spectrum compatibility
 		}
 	}
 }
