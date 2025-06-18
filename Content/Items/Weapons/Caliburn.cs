@@ -10,7 +10,7 @@ using Terbritish.Content.Items.Weapons;
 
 namespace Terbritish.Content.Items.Weapons
 {
-    public class MythrilShiv : ModItem
+    public class Caliburn : ModItem
     {
         public override void SetDefaults()
         {
@@ -28,7 +28,7 @@ namespace Terbritish.Content.Items.Weapons
             Item.noMelee = true;
             Item.rare = ItemRarityID.White;
             Item.value = Item.sellPrice(0, 0, 0, 10);
-            Item.shoot = ModContent.ProjectileType<MythrilShivStab>();
+            Item.shoot = ModContent.ProjectileType<CaliburnStab>();
             Item.shootSpeed = 2.1f;
         }
 
@@ -40,7 +40,7 @@ namespace Terbritish.Content.Items.Weapons
         {
 
 
-            if (type == ModContent.ProjectileType<MythrilShivStab>())
+            if (type == ModContent.ProjectileType<CaliburnStab>())
             {
                 damage = (int)(damage * 1.5f);
             }
@@ -57,7 +57,7 @@ namespace Terbritish.Content.Items.Weapons
         {
             if (player.altFunctionUse == 2)
             {
-                Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<MythrilShivThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
+                Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<CaliburnThrown   >(), (int)(damage * 0.67f), knockback, player.whoAmI);
                 return false;
             }
             return true;

@@ -9,6 +9,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terbritish.Content.DamageClasses;
 
 namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodItems
 {
@@ -31,7 +32,7 @@ namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodItems
             Item.width = 32;
             Item.height = 32;
             Item.UseSound = SoundID.Item1;
-            Item.DamageType = DamageClass.MeleeNoSpeed;
+            Item.DamageType = ModContent.GetInstance<KnifeslingerDamage>();
             Item.autoReuse = false;
             Item.noUseGraphic = true;
             Item.noMelee = true;

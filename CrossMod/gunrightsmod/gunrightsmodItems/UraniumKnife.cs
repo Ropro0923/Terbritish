@@ -8,6 +8,7 @@ using Terraria.ModLoader;
 using Terbritish.Core;
 using gunrightsmod.Content.Items;
 using Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles;
+using Terbritish.Content.DamageClasses;
 
 namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodItems
 {
@@ -29,7 +30,7 @@ namespace Terbritish.CrossMod.gunrightsmod.gunrightsmodItems
             Item.width = 32;
             Item.height = 32;
             Item.UseSound = SoundID.Item1;
-            Item.DamageType = DamageClass.MeleeNoSpeed;
+            Item.DamageType = ModContent.GetInstance<BritishDamage>();
             Item.autoReuse = false;
             Item.noUseGraphic = true;
             Item.noMelee = true;

@@ -181,6 +181,36 @@ Items: {
 		DisplayName: Precipice Blade
 		Tooltip: ""
 	}
+
+	TwilightSpark: {
+		DisplayName: Twilight Spark
+		Tooltip: ""
+	}
+
+	TrueTwilightSpark: {
+		Tooltip: ""
+		DisplayName: True Twilight Spark
+	}
+
+	Dwarfamasa: {
+		DisplayName: Dwarfamasa
+		Tooltip: ""
+	}
+
+	Caliburn: {
+		DisplayName: Caliburn
+		Tooltip: ""
+	}
+
+	TrueCaliburn: {
+		DisplayName: True Caliburn
+		Tooltip: ""
+	}
+
+	MoonAnger: {
+		DisplayName: Moon Anger
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -228,6 +258,18 @@ Projectiles: {
 	PrecipiceBladeThrown.DisplayName: Precipice Blade Thrown
 	PrecipiceBladeStab.DisplayName: Precipice Blade Stab
 	NapalmBad.DisplayName: Napalm Bad
+	TwilightSparkStab.DisplayName: Twilight Spark Stab
+	TwilightSparkThrown.DisplayName: Twilight Spark Thrown
+	TrueTwilightSparkStab.DisplayName: True Twilight Spark Stab
+	TrueTwilightSparkThrown.DisplayName: True Twilight Spark Thrown
+	DwarfamasaStab.DisplayName: Dwarfamasa Stab
+	DwarfamasaThrown.DisplayName: Dwarfamasa Thrown
+	CaliburnStab.DisplayName: Caliburn Stab
+	CaliburnThrown.DisplayName: Caliburn Thrown
+	TrueCaliburnStab.DisplayName: True Caliburn Stab
+	TrueCaliburnThrown.DisplayName: True Caliburn Thrown
+	MoonAngerStab.DisplayName: Moon Anger Stab
+	MoonAngerThrown.DisplayName: Moon Anger Thrown
 }
 
 Configs: {

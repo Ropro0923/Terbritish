@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
 namespace Terbritish.Content.Items.Weapons
 {
-	public class London : ModItem
+	public class MoonAnger : ModItem
 	{
 		public override void SetDefaults()
 		{
@@ -20,13 +20,13 @@ namespace Terbritish.Content.Items.Weapons
 			Item.width = 32;
 			Item.height = 32;
 			Item.UseSound = SoundID.Item1;
-			Item.DamageType = ModContent.GetInstance<BritishDamage>();
+			Item.DamageType = ModContent.GetInstance<KnifeslingerDamage>();
 			Item.autoReuse = false;
 			Item.noUseGraphic = true;
 			Item.noMelee = true;
 			Item.rare = ItemRarityID.White;
 			Item.value = Item.sellPrice(0, 0, 0, 10);
-			Item.shoot = ModContent.ProjectileType<LondonStab>();
+			Item.shoot = ModContent.ProjectileType<MoonAngerStab>();
 			Item.shootSpeed = 2.1f;
 
 		}
@@ -36,13 +36,13 @@ namespace Terbritish.Content.Items.Weapons
 			return true;
 		}
 
-   		 public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
- 		 {
-     		 if (type == ModContent.ProjectileType<LondonStab>())
-     		 {
-        	  damage = (int)(damage * 1.5f);
-     		 }
-     	 }
+		 public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
+		 {
+			 if (type == ModContent.ProjectileType<MoonAngerStab>())
+			 {
+			 	damage = (int)(damage * 1.5f);
+			 }
+		 }
 
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
 		{
@@ -56,7 +56,7 @@ namespace Terbritish.Content.Items.Weapons
 					source,
 					position,
 					velocity,
-					ModContent.ProjectileType<LondonThrown>(),
+					ModContent.ProjectileType<MoonAngerThrown>(),
 					(int)(damage * 0.67f),
 					knockback,
 					player.whoAmI
