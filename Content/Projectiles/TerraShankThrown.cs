@@ -2,11 +2,11 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Terbritish2.Content.DamageClasses;
+using Terbritish.Content.DamageClasses;
 using Terraria.Audio;
 
 
-namespace Terbritish2.Content.Projectiles
+namespace Terbritish.Content.Projectiles
 {
     public class TerraShankThrown : ModProjectile
     {
