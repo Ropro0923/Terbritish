@@ -1,14 +1,6 @@
-using System;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
-using Terraria;
-using Terraria.Graphics.Effects;
 using System.Reflection;
-using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
-using System.Linq;
-using Terraria.Localization;
-using Terraria.UI;
 using Fargowiltas.Items.CaughtNPCs;
 using Terbritish.CrossMod.Fargowiltas;
 using Terbritish.Core;

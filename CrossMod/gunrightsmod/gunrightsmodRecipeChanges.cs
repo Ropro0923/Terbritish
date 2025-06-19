@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.Audio;
+
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Terraria.DataStructures;
 using Terbritish.Core;
 using Terbritish.Content.Items.Weapons;
-using Microsoft.Xna.Framework;
 using gunrightsmod.Content.Items;
 
 namespace Terbritish.CrossMod.gunrightsmod

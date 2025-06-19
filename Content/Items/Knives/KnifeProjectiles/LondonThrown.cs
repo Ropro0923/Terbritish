@@ -1,10 +1,6 @@
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
 using Terbritish.Content.DamageClasses;
-using Terraria.Audio;
-using Terbritish.Content.Buffs;
 
 namespace Terbritish.Content.Items.Knives.KnifeProjectiles
 {

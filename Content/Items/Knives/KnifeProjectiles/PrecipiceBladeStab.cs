@@ -2,7 +2,6 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Enums;
 using Terraria.ModLoader;
-using Terbritish.Content.Items.Knives.KnifeProjectiles;
 using Terbritish.Content.Projectiles;
 
 

@@ -4,8 +4,6 @@ using Terraria.ID;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria.Audio;
-using Terraria.DataStructures;
-using Terbritish.Content.DamageClasses;
 
 namespace Terbritish.Globals
 {

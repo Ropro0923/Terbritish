@@ -3,7 +3,6 @@ using Terraria.ModLoader.IO;
 using Terraria.ModLoader;
 using Terraria;
 using Terbritish.Content.NPCs;
-using Terbritish.Core.Systems;
 
 namespace Terbritish.Core.Systems
 {

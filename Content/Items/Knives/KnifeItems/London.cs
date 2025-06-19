@@ -1,4 +1,3 @@
-using System;
 using Microsoft.Xna.Framework;
 using Terbritish.Content.Items.Knives.KnifeProjectiles;
 using Terraria;

@@ -196,6 +196,21 @@ Items: {
 		DisplayName: Dapper Chapper
 		Tooltip: ""
 	}
+
+	TestLance: {
+		Tooltip: ""
+		DisplayName: Test Lance
+	}
+
+	ExampleLance: {
+		DisplayName: Example Lance
+		Tooltip: ""
+	}
+
+	ExampleTerbritishLance: {
+		DisplayName: Example Terbritish Lance
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -251,6 +266,9 @@ Projectiles: {
 	TeaLauncherProjectile.DisplayName: Tea Launcher Projectile
 	TeaProjectile.DisplayName: Tea Projectile
 	AstatineSplode.DisplayName: Astatine Splode
+	TestLanceProjectile.DisplayName: Test Lance Projectile
+	ExampleLanceProjectile.DisplayName: Example Lance Projectile
+	ExampleTerbritishLanceProjectile.DisplayName: Example Terbritish Lance Projectile
 }
 
 Configs: {

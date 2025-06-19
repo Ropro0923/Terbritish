@@ -1,7 +1,6 @@
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
-using Terbritish.Content.Items.Placeable;
 
 namespace Terbritish.Content.Tiles
 {

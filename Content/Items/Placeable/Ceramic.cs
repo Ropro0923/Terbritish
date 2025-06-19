@@ -1,7 +1,6 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terbritish.Content.Tiles;
 
 
 namespace Terbritish.Content.Items.Placeable

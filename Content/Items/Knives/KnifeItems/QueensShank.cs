@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using System;
 using System.Collections.Generic;
 using Terbritish.Content.Items.Knives.KnifeProjectiles;
 using Terbritish.Content.DamageClasses;

@@ -1,12 +1,10 @@
 using Microsoft.Xna.Framework;
-using System;
 using Terbritish.Content.Items.Knives.KnifeProjectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
-using Terbritish.Content.Items.Weapons;
 
 namespace Terbritish.Content.Items.Knives.KnifeItems
 {

@@ -2,7 +2,6 @@ using Terbritish.Content.DamageClasses;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terbritish.Content.Projectiles;
 using Terbritish.Content.Items.Placeable;
 using Terbritish.Content.Items.Materials;
 

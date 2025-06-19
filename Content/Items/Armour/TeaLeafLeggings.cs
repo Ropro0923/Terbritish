@@ -1,7 +1,6 @@
 ﻿using Terbritish.Content.Items.Materials;
 using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace Terbritish.Content.Items.Armour

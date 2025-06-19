@@ -2,9 +2,7 @@ using Terbritish.Content.DamageClasses;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terbritish.Content.Projectiles;
 using Microsoft.Xna.Framework;
-using Terbritish.Content.Items.Weapons;
 
 namespace Terbritish.Content.Items.Weapons
 {
