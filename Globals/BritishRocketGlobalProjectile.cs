@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terraria.DataStructures;
 using Terbritish.Content.DamageClasses;
 
-namespace Terbritish.Content.Projectiles
+namespace Terbritish.Globals
 {
     public class BritishRocketGlobalProjectile : GlobalProjectile
     {

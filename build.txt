@@ -2,4 +2,4 @@ displayName = TerBritish
 author = Ropro0923
 version = 0.1
 weakReferences = gunrightsmod, Fargowiltas, MagnoliaMod, Spiritrum
-buildIgnore = lib\*
+buildIgnore = lib\*, obj\*

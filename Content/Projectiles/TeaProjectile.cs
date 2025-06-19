@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using Terbritish.Content.DamageClasses;
 using Terraria.Audio;
 using Terbritish.Content.Buffs;
+using Terbritish.Content.Projectiles;
 
 namespace Terbritish.Content.Projectiles
 {

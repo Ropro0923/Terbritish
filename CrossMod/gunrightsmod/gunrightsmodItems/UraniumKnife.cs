@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
-using Terbritish.Content.Projectiles;
+using Terbritish.Content.Items.Knives.KnifeProjectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;

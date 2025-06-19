@@ -10,15 +10,15 @@ using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.GameContent.Personalities;
-using Terraria.GameContent.UI;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.Utilities;
-using Terbritish.Content.Projectiles;
 using Terbritish.Content.Items.Weapons;
 using Terbritish.Core.Systems;
+using Terbritish.Content.Projectiles;
+
 
 namespace Terbritish.Content.NPCs
 {

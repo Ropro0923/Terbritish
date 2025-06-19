@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
-using Terbritish.Content.Projectiles;
+using Terbritish.Content.Items.Knives.KnifeProjectiles;
 using Terbritish.CrossMod.gunrightsmod.gunrightsmodProjectiles;
 using Terbritish.Core;
 using Terraria;

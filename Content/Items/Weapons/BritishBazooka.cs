@@ -1,12 +1,10 @@
 using Microsoft.Xna.Framework;
-using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terbritish.Content.Projectiles;
 using Terraria.DataStructures;
 using Terbritish.Content.DamageClasses;
-using Terbritish.Core;
+using Terbritish.Globals;
 
 
 namespace Terbritish.Content.Items.Weapons

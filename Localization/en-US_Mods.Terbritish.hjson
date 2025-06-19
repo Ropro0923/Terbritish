@@ -25,14 +25,14 @@ NPCs: {
 			Princess_LovesNPC: I like {NPCName}.
 		}
 
-		Census.SpawnCondition: Have a Cuppa' Tea in your inventory
+		Census.SpawnCondition: Conditions unknown
 	}
 }
 
 Buffs: {
 	Scalding: {
 		DisplayName: Scalding
-		Description: Your skin is burning from the piping hot tea!
+		Description: Mods.Terbritish.Buffs.Scalding.Description
 	}
 }
 
@@ -52,23 +52,8 @@ Items: {
 		Tooltip: ""
 	}
 
-	TeaLeaves: {
-		DisplayName: Tea Leaves
-		Tooltip: ""
-	}
-
-	Ceramic: {
-		DisplayName: Ceramic
-		Tooltip: ""
-	}
-
 	AdamantiteShiv: {
 		DisplayName: Adamantite Shiv
-		Tooltip: ""
-	}
-
-	BiscuitBeater: {
-		DisplayName: Biscuit Beater
 		Tooltip: ""
 	}
 
@@ -77,13 +62,8 @@ Items: {
 		Tooltip: ""
 	}
 
-	BrenGun: {
-		DisplayName: Bren Gun
-		Tooltip: ""
-	}
-
-	BritishBazooka: {
-		DisplayName: British Bazooka
+	Caliburn: {
+		DisplayName: Caliburn
 		Tooltip: ""
 	}
 
@@ -97,13 +77,13 @@ Items: {
 		Tooltip: ""
 	}
 
-	CuppaTea: {
-		DisplayName: Cuppa Tea
+	DawnsEnd: {
+		DisplayName: Dawns End
 		Tooltip: ""
 	}
 
-	DawnsEnd: {
-		DisplayName: Dawns End
+	Dwarfamasa: {
+		DisplayName: Dwarfamasa
 		Tooltip: ""
 	}
 
@@ -127,6 +107,11 @@ Items: {
 		Tooltip: ""
 	}
 
+	MoonAnger: {
+		DisplayName: Moon Anger
+		Tooltip: ""
+	}
+
 	MythrilShiv: {
 		DisplayName: Mythril Shiv
 		Tooltip: ""
@@ -142,13 +127,18 @@ Items: {
 		Tooltip: ""
 	}
 
-	QueensShank: {
-		DisplayName: Queen's Shank
+	PrecipiceBlade: {
+		DisplayName: Precipice Blade
 		Tooltip: ""
 	}
 
-	TeaLauncher: {
-		DisplayName: Tea Launcher
+	QueensShank: {
+		DisplayName: Queens Shank
+		Tooltip: ""
+	}
+
+	TerraShank: {
+		DisplayName: Terra Shank
 		Tooltip: ""
 	}
 
@@ -157,28 +147,13 @@ Items: {
 		Tooltip: ""
 	}
 
-	AstatineKnife: {
-		DisplayName: Astatine Knife
+	TrueCaliburn: {
+		DisplayName: True Caliburn
 		Tooltip: ""
 	}
 
-	PlutoniumShank: {
-		DisplayName: Plutonium Shank
-		Tooltip: ""
-	}
-
-	UraniumKnife: {
-		DisplayName: Uranium Knife
-		Tooltip: ""
-	}
-
-	DapperChapper: {
-		DisplayName: Dapper Chapper
-		Tooltip: ""
-	}
-
-	PrecipiceBlade: {
-		DisplayName: Precipice Blade
+	TrueTwilightSpark: {
+		DisplayName: True Twilight Spark
 		Tooltip: ""
 	}
 
@@ -187,28 +162,38 @@ Items: {
 		Tooltip: ""
 	}
 
-	TrueTwilightSpark: {
-		Tooltip: ""
-		DisplayName: True Twilight Spark
-	}
-
-	Dwarfamasa: {
-		DisplayName: Dwarfamasa
+	TeaLeaves: {
+		DisplayName: Tea Leaves
 		Tooltip: ""
 	}
 
-	Caliburn: {
-		DisplayName: Caliburn
+	Ceramic: {
+		DisplayName: Ceramic
 		Tooltip: ""
 	}
 
-	TrueCaliburn: {
-		DisplayName: True Caliburn
+	BrenGun: {
+		DisplayName: Bren Gun
 		Tooltip: ""
 	}
 
-	MoonAnger: {
-		DisplayName: Moon Anger
+	BritishBazooka: {
+		DisplayName: British Bazooka
+		Tooltip: ""
+	}
+
+	CuppaTea: {
+		DisplayName: Cuppa Tea
+		Tooltip: ""
+	}
+
+	TeaLauncher: {
+		DisplayName: Tea Launcher
+		Tooltip: ""
+	}
+
+	DapperChapper: {
+		DisplayName: Dapper Chapper
 		Tooltip: ""
 	}
 }
@@ -216,17 +201,18 @@ Items: {
 Projectiles: {
 	AdamantiteShivStab.DisplayName: Adamantite Shiv Stab
 	AdamantiteShivThrown.DisplayName: Adamantite Shiv Thrown
-	BiscuitBeaterProjectile.DisplayName: Biscuit Beater Projectile
 	BloodslingerStab.DisplayName: Bloodslinger Stab
 	BloodslingerThrown.DisplayName: Bloodslinger Thrown
+	CaliburnStab.DisplayName: Caliburn Stab
+	CaliburnThrown.DisplayName: Caliburn Thrown
 	CobaltDaggerStab.DisplayName: Cobalt Dagger Stab
 	CobaltDaggerThrown.DisplayName: Cobalt Dagger Thrown
 	CopperKnifeStab.DisplayName: Copper Knife Stab
 	CopperKnifeThrown.DisplayName: Copper Knife Thrown
-	CorruptVortex.DisplayName: Corrupt Vortex
-	CrystalGelShard.DisplayName: Crystal Gel Shard
 	DawnsEndStab.DisplayName: Dawns End Stab
 	DawnsEndThrown.DisplayName: Dawns End Thrown
+	DwarfamasaStab.DisplayName: Dwarfamasa Stab
+	DwarfamasaThrown.DisplayName: Dwarfamasa Thrown
 	GoldKnifeStab.DisplayName: Gold Knife Stab
 	GoldKnifeThrown.DisplayName: Gold Knife Thrown
 	IronKnifeStab.DisplayName: Iron Knife Stab
@@ -235,41 +221,36 @@ Projectiles: {
 	LeadKnifeThrown.DisplayName: Lead Knife Thrown
 	LondonStab.DisplayName: London Stab
 	LondonThrown.DisplayName: London Thrown
+	MoonAngerStab.DisplayName: Moon Anger Stab
+	MoonAngerThrown.DisplayName: Moon Anger Thrown
 	MythrilShivStab.DisplayName: Mythril Shiv Stab
 	MythrilShivThrown.DisplayName: Mythril Shiv Thrown
 	OrichalcumShivStab.DisplayName: Orichalcum Shiv Stab
 	OrichalcumShivThrown.DisplayName: Orichalcum Shiv Thrown
 	PalladiumKnifeStab.DisplayName: Palladium Knife Stab
 	PalladiumKnifeThrown.DisplayName: Palladium Knife Thrown
+	PrecipiceBladeStab.DisplayName: Precipice Blade Stab
+	PrecipiceBladeThrown.DisplayName: Precipice Blade Thrown
 	QueensShankStab.DisplayName: Queens Shank Stab
 	QueensShankThrown.DisplayName: Queens Shank Thrown
+	TerraShankEnergy.DisplayName: Terra Shank Energy
+	TerraShankStab.DisplayName: Terra Shank Stab
+	TerraShankThrown.DisplayName: Terra Shank Thrown
+	TinKnifeStab.DisplayName: Tin Knife Stab
+	TinKnifeThrown.DisplayName: Tin Knife Thrown
+	TrueCaliburnStab.DisplayName: True Caliburn Stab
+	TrueCaliburnThrown.DisplayName: True Caliburn Thrown
+	TrueTwilightSparkStab.DisplayName: True Twilight Spark Stab
+	TrueTwilightSparkThrown.DisplayName: True Twilight Spark Thrown
+	TwilightSparkStab.DisplayName: Twilight Spark Stab
+	TwilightSparkThrown.DisplayName: Twilight Spark Thrown
+	CorruptVortex.DisplayName: Corrupt Vortex
+	CrystalGelShard.DisplayName: Crystal Gel Shard
+	NapalmBad.DisplayName: Napalm Bad
 	TeaDroplet.DisplayName: Tea Droplet
 	TeaLauncherProjectile.DisplayName: Tea Launcher Projectile
 	TeaProjectile.DisplayName: Tea Projectile
-	TinKnifeStab.DisplayName: Tin Knife Stab
-	TinKnifeThrown.DisplayName: Tin Knife Thrown
-	AstatineKnifeStab.DisplayName: Astatine Knife Stab
-	AstatineKnifeThrown.DisplayName: Astatine Knife Thrown
 	AstatineSplode.DisplayName: Astatine Splode
-	PlutoniumShankStab.DisplayName: Plutonium Shank Stab
-	PlutoniumShankThrown.DisplayName: Plutonium Shank Thrown
-	UraniumKnifeStab.DisplayName: Uranium Knife Stab
-	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
-	PrecipiceBladeThrown.DisplayName: Precipice Blade Thrown
-	PrecipiceBladeStab.DisplayName: Precipice Blade Stab
-	NapalmBad.DisplayName: Napalm Bad
-	TwilightSparkStab.DisplayName: Twilight Spark Stab
-	TwilightSparkThrown.DisplayName: Twilight Spark Thrown
-	TrueTwilightSparkStab.DisplayName: True Twilight Spark Stab
-	TrueTwilightSparkThrown.DisplayName: True Twilight Spark Thrown
-	DwarfamasaStab.DisplayName: Dwarfamasa Stab
-	DwarfamasaThrown.DisplayName: Dwarfamasa Thrown
-	CaliburnStab.DisplayName: Caliburn Stab
-	CaliburnThrown.DisplayName: Caliburn Thrown
-	TrueCaliburnStab.DisplayName: True Caliburn Stab
-	TrueCaliburnThrown.DisplayName: True Caliburn Thrown
-	MoonAngerStab.DisplayName: Moon Anger Stab
-	MoonAngerThrown.DisplayName: Moon Anger Thrown
 }
 
 Configs: {
@@ -277,18 +258,18 @@ Configs: {
 		DisplayName: Terbritish Config
 
 		TerMerica: {
-			Label: TerMerica
-			Tooltip: Enables TerMerica compatibility
+			Label: Ter Merica
+			Tooltip: ""
 		}
 
 		Spiritrum: {
-			Label: Spectrum
-			Tooltip: Enables Spectrum compatibility
+			Label: Spiritrum
+			Tooltip: ""
 		}
 
 		MagnoliasMod: {
-			Label: Magnolia's Mod
-			Tooltip: Enables Spectrum compatibility
+			Label: Magnolias Mod
+			Tooltip: ""
 		}
 	}
 }
