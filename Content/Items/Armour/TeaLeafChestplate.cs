@@ -18,7 +18,8 @@ namespace Terbritish.Content.Items.Armour
 			Item.defense = 6; 
 		}
 
-		public override void UpdateEquip(Player player) {
+		public override void UpdateEquip(Player player)
+		{
 			player.moveSpeed += 0.1f;
 		}
 

@@ -1,20 +1,24 @@
-    using Terraria;
-    using Terraria.ModLoader;
+using Terraria;
+using Terraria.ModLoader;
 
-public class LanceAcceleration : ModPlayer
+public class LanceDirectionPlayer : ModPlayer
 {
-    public bool applyAccel;
 
-    public override void ResetEffects()
+    public override void OnEnterWorld()
     {
-        applyAccel = false;
+        lockedDirection = 0;
     }
 
-    public override void PostUpdateMiscEffects()
+    public void LockDirection()
     {
-        if (applyAccel)
+        lockedDirection = Player.direction;
+    }
+
+    public override void PostUpdate()
+    {
+        if (lockedDirection != 0)
         {
-            Player.Movespeed = 0.25f;
+            Player.direction = lockedDirection;
         }
     }
 }

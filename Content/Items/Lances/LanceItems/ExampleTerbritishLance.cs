@@ -10,7 +10,7 @@ namespace Terbritish.Content.Items.Lances.LanceItems
 {
     public class ExampleTerbritishLance : ModItem
     {
-
+        public int PlayerDirection;
 
         public override void SetDefaults()
         {
@@ -39,7 +39,7 @@ namespace Terbritish.Content.Items.Lances.LanceItems
 
             if (player.channel && player.HeldItem == Item)
             {
-                player.GetModPlayer<LanceAcceleration>().applyAccel = true;
+                
             }
         }
     }
