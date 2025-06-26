@@ -10,7 +10,6 @@ namespace Terbritish.Content.Items.Lances.LanceItems
 {
     public class ExampleTerbritishLance : ModItem
     {
-        public int PlayerDirection;
 
         public override void SetDefaults()
         {
@@ -36,10 +35,35 @@ namespace Terbritish.Content.Items.Lances.LanceItems
         public override void HoldItem(Player player)
         {
             player.itemRotation = 0f;
-
+            var modPlayer = player.GetModPlayer<LanceAccelerationPlayer>();
+            modPlayer.MaxSpeed = 13f;
+            
             if (player.channel && player.HeldItem == Item)
             {
-                
+                modPlayer.AccelTimer++;
+                modPlayer.StartBoost = 0.2f;
+                modPlayer.HoldingLance = true;
+
+                if (modPlayer.AccelTimer >= 7)
+                {
+                    if (modPlayer.SpeedBoost <= 4)
+                    {
+                        modPlayer.SpeedBoost++;
+                    }
+                    else
+                    {
+                        modPlayer.SpeedBoost = 4;
+                    }
+                    modPlayer.AccelTimer = 0;
+                }
+            }
+            else
+            {
+                modPlayer.SpeedBoost = 0;
+                modPlayer.StartBoost = 0;
+                modPlayer.MaxSpeed = 0f;
+                modPlayer.HoldingLance = false;
+
             }
         }
     }
