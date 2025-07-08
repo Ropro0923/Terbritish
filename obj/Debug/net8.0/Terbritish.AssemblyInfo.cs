@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Terbritish")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bae15172ee1624b64fd77416d6af572cf2fdef5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21fdf7f1ffc683d1133988f4d1c50b04c3192629")]
 [assembly: System.Reflection.AssemblyProductAttribute("Terbritish")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Terbritish")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
