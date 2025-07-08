@@ -4,31 +4,23 @@ using Microsoft.Xna.Framework;
 using System;
 using Terbritish.Content.DamageClasses;
 using Terraria.ID;
+using Terbritish;
 
-public class LanceAccelerationPlayer : ModPlayer
+namespace Terbritish.Content.Globals
 {
-    public int AccelTimer;
-    public int SpeedBoost;
-    public float StartBoost;
-    public float MaxSpeed;
-    public bool HoldingLance;
-
-    public override void PostUpdate()
+    public class LancePlayer : ModPlayer
     {
-        if (HoldingLance)
+        public bool HoldingLance;
+    }
+
+    public class LanceBonusMountDamage : ModPlayer
+    {
+        public override void PostUpdate()
         {
-            if (Math.Abs(Player.velocity.X) < 13f)
+            if (ModContent.GetInstance<LancePlayer>().HoldingLance && Player.mount.Active)
             {
-                Player.velocity.X += ((SpeedBoost / 60f) + StartBoost) * Player.direction;
 
-                Main.NewText("SpeedBoost: " + SpeedBoost, Color.Orange);
-                Main.NewText(Player.velocity.X, Color.Orange);
-            }
-
-
-            if (Player.mount.Active)
-            {
-                Player.GetDamage(ModContent.GetInstance<BritishDamage>()) += 0.50f;
+                Player.GetDamage(ModContent.GetInstance<BritishDamage>()) += 0.10f;
 
                 if (Player.mount.Type == MountID.PaintedHorse)
                 {
@@ -53,6 +45,28 @@ public class LanceAccelerationPlayer : ModPlayer
                 if (Player.mount.Type == MountID.WallOfFleshGoat)
                 {
                     Player.GetDamage(ModContent.GetInstance<BritishDamage>()) += 0.10f;
+                }
+            }
+        }
+    }
+
+    public class LanceAcceleration : ModPlayer
+    {
+        public int AccelTimer;
+        public int SpeedBoost;
+        public override void PostUpdate()
+        {
+            if (ModContent.GetInstance<LancePlayer>().HoldingLance)
+            {
+                AccelTimer++;
+                if (AccelTimer < 6)
+                {
+                    SpeedBoost++;
+                }
+                if (SpeedBoost == 1)
+                {
+                    Player.velocity.X += Player.direction + 0.2f;
+                    SpeedBoost = 0;
                 }
             }
         }
