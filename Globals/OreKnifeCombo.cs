@@ -52,13 +52,14 @@ namespace Terbritish.Globals
                   new ParticleOrchestraSettings { PositionInWorld = Main.rand.NextVector2FromRectangle(target.Hitbox) },
                   projectile.owner);
 
+                  // Apply a buff to the player
+            Player player = Main.player[projectile.owner];
+            player.AddBuff(ModContent.BuffType<AlloySkin>(), 300); // 300 = 5 seconds (60 ticks per second)
                 
             }
 
 
-            // Apply a buff to the player
-            Player player = Main.player[projectile.owner];
-            player.AddBuff(ModContent.BuffType<AlloySkin>(), 300); // 300 = 5 seconds (60 ticks per second)
+          
 
         }
         public override void ModifyHitNPC(Projectile projectile, NPC target, ref NPC.HitModifiers modifiers)
