@@ -44,6 +44,30 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
             }
             
         }
+         public override void ModifyTooltips(List<TooltipLine> tooltips)
+ {
+     // Here we add a tooltipline that will later be removed, showcasing how to remove tooltips from an item
+     var line = new TooltipLine(Mod, "Face", "Left click to shank enemies");
+     tooltips.Add(line);
+
+     line = new TooltipLine(Mod, "Face", "Right click to throw the knife")
+     {
+         OverrideColor = new Color(255, 255, 255)
+     };
+     tooltips.Add(line);
+     line = new TooltipLine(Mod, "Face", "Set up a combo by throwing the knife, complete it by shanking")
+     {
+         OverrideColor = new Color(255, 255, 255)
+     };
+     tooltips.Add(line);
+     line = new TooltipLine(Mod, "Face", "Completed combos deal increased damage and grant the player the Alloy Skin buff")
+     {
+         OverrideColor = new Color(255, 255, 255)
+     };
+     tooltips.Add(line);
+
+
+ }
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();  
@@ -52,14 +76,24 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();
         }
-        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-        {
-            if (player.altFunctionUse == 2)
-            {
-                Projectile.NewProjectile(source, position, velocity* 2.67f, ModContent.ProjectileType<CopperKnifeThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
-                return false;
-            }
-            return true;
-        }
+            public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+     {
+         if (player.altFunctionUse == 2)
+         {
+             int proj = Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<CopperKnifeThrown>(), (int)(damage * 0.67f), (int)(knockback * 0.99f), player.whoAmI);
+             Main.projectile[proj].GetGlobalProjectile<OreKnifeComboSetup>().fromtheOreKnives = true;
+
+
+             return false;
+         }
+         else
+         {
+             int proj = Projectile.NewProjectile(source, position, velocity, type, damage, knockback, player.whoAmI);
+             Main.projectile[proj].GetGlobalProjectile<OreKnifeCombo>().fromOreKnives = true;
+             Main.projectile[proj].GetGlobalProjectile<OreKnifeComboSetup>().fromtheOreKnives = false;
+             return false; // Prevent vanilla projectile spawn
+
+     }
+ }
     }
 }
