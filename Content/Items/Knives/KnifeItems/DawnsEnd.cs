@@ -58,16 +58,24 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
             }
             
         }
-        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-        {
-            if (player.altFunctionUse == 2)
-            {
-                Projectile.NewProjectile(source, position, velocity*3.25f, ModContent.ProjectileType<DawnsEndThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
-              
-                return false;
-            }
-         
-            return true;
-        }
+                public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+         {
+             if (player.altFunctionUse == 2)
+             {
+                 int proj = Projectile.NewProjectile(source, position, velocity * 3.5f, ModContent.ProjectileType<DawnsEndThrown>(), (int)(damage * 0.67f), (int)(knockback * 0.99f), player.whoAmI);
+                 Main.projectile[proj].GetGlobalProjectile<DawnsEndComboSetup>().fromtheDawnsEnd = true;
+
+
+                 return false;
+             }
+             else
+             {
+                 int proj = Projectile.NewProjectile(source, position, velocity, type, damage, knockback, player.whoAmI);
+                 Main.projectile[proj].GetGlobalProjectile<DawnsEndCombo>().fromDawnsEnd = true;
+                 Main.projectile[proj].GetGlobalProjectile<DawnsEndComboSetup>().fromtheDawnsEnd = false;
+                 return false; // Prevent vanilla projectile spawn
+
+             }
+         }
     }
 }
