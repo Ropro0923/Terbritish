@@ -9,7 +9,7 @@ using Terbritish.Globals;
 
 namespace Terbritish.Content.Items.Knives.KnifeItems
 {
-    public class LeadKnife : ModItem
+    public class PlatinumKnife : ModItem
     {
         public override void SetDefaults()
         {
@@ -27,7 +27,7 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
             Item.noMelee = true;
             Item.rare = ItemRarityID.White;
             Item.value = Item.sellPrice(0, 0, 0, 10);
-            Item.shoot = ModContent.ProjectileType<LeadKnifeStab>();
+            Item.shoot = ModContent.ProjectileType<PlatinumKnifeStab>();
             Item.shootSpeed = 2.1f;
         }
 
@@ -37,7 +37,7 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
         }
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
-            if (type == ModContent.ProjectileType<LeadKnifeStab>())
+            if (type == ModContent.ProjectileType<PlatinumKnifeStab>())
             {
                 damage = (int)(damage * 1.5f);
             }
@@ -45,7 +45,7 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.LeadBar, 6);
+            recipe.AddIngredient(ItemID.PlatinumBar, 6);
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
         }
@@ -53,7 +53,7 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
         {
             if (player.altFunctionUse == 2)
             {
-                int proj = Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<LeadKnifeThrown>(), (int)(damage * 0.67f), (int)(knockback * 0.99f), player.whoAmI);
+                int proj = Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<PlatinumKnifeThrown>(), (int)(damage * 0.67f), (int)(knockback * 0.99f), player.whoAmI);
                 Main.projectile[proj].GetGlobalProjectile<OreKnifeComboSetup>().fromtheOreKnives = true;
                 return false;
             }

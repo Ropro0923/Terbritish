@@ -5,6 +5,7 @@ using Terbritish.Content.DamageClasses;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
+using Terbritish.Content.Globals;
 
 namespace Terbritish.Content.Items.Lances.LanceItems
 {
@@ -35,40 +36,25 @@ namespace Terbritish.Content.Items.Lances.LanceItems
         public override void HoldItem(Player player)
         {
             player.itemRotation = 0f;
-            var modPlayer = player.GetModPlayer<LanceAccelerationPlayer>();
-            modPlayer.MaxSpeed = 16f;
+            var LancePlayer = player.GetModPlayer<LancePlayer>();
+            var LanceAcceleration = player.GetModPlayer<LanceAcceleration>();
 
             if (player.channel && player.HeldItem == Item)
             {
-                modPlayer.AccelTimer++;
-                modPlayer.StartBoost = 0.2f;
-                modPlayer.HoldingLance = true;
-
-                if (modPlayer.AccelTimer >= 7)
+                LancePlayer.HoldingLance = true;
+                LanceAcceleration.AccelTimer++;
+                if (LanceAcceleration.AccelTimer >= 10 && LanceAcceleration.SpeedBoost < 10)
                 {
-                    if (modPlayer.SpeedBoost <= 5)
-                    {
-                        modPlayer.SpeedBoost++;
-                    }
-                    else
-                    {
-                        modPlayer.SpeedBoost = 5;
-                    }
-                    modPlayer.AccelTimer = 0;
+                    player.velocity.X += player.direction + 0.2f;
+                    LanceAcceleration.AccelTimer = 0;
+                    LanceAcceleration.SpeedBoost++;
                 }
-
-                Vector2 dustPosition = player.Bottom + new Vector2(-4, -4);
-                int dustIndex = Dust.NewDust(dustPosition, 8, 8, DustID.Water, 0f, 0f, 100, default, 1f);
-                Main.dust[dustIndex].noGravity = true;
-
-
             }
             else
             {
-                modPlayer.SpeedBoost = 0;
-                modPlayer.StartBoost = 0;
-                modPlayer.MaxSpeed = 0f;
-                modPlayer.HoldingLance = false;
+                LanceAcceleration.SpeedBoost = 0;
+                LanceAcceleration.AccelTimer = 0;
+                LancePlayer.HoldingLance = false;
             }
         }
     }

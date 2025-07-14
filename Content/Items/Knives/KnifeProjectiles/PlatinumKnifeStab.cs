@@ -3,18 +3,19 @@ using Terraria;
 using Terraria.Enums;
 using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
+
 namespace Terbritish.Content.Items.Knives.KnifeProjectiles
 {
     // Shortsword projectiles are handled in a special way with how they draw and damage things
     // The "hitbox" itself is closer to the player, the sprite is centered on it
     // However the interactions with the world will occur offset from this hitbox, closer to the sword's tip (CutTiles, Colliding)
     // Values chosen mostly correspond to Iron Shortsword
-    public class GoldKnifeStab : ModProjectile
+    public class PlatinumKnifeStab : ModProjectile
     {
-        public const int FadeInDuration = 7;
-        public const int FadeOutDuration = 4;
+        public const int FadeInDuration = 8;
+        public const int FadeOutDuration = 5;
 
-        public const int TotalDuration = 14;
+        public const int TotalDuration = 17;
 
         // The "width" of the blade
         public float CollisionWidth => 10f * Projectile.scale;
@@ -27,7 +28,7 @@ namespace Terbritish.Content.Items.Knives.KnifeProjectiles
 
         public override void SetDefaults()
         {
-            Projectile.Size = new Vector2(18); // This sets width and height to the same value (important when projectiles can rotate)
+            Projectile.Size = new Vector2(17); // This sets width and height to the same value (important when projectiles can rotate)
             Projectile.aiStyle = -1; // Use our own AI to customize how it behaves, if you don't want that, keep this at ProjAIStyleID.ShortSword. You would still need to use the code in SetVisualOffsets() though
             Projectile.friendly = true;
             Projectile.penetrate = -1;
@@ -80,8 +81,8 @@ namespace Terbritish.Content.Items.Knives.KnifeProjectiles
         private void SetVisualOffsets()
         {
             // 32 is the sprite size (here both width and height equal)
-            const int HalfSpriteWidth = 38 / 2;
-            const int HalfSpriteHeight = 38 / 2;
+            const int HalfSpriteWidth = 28 / 2;
+            const int HalfSpriteHeight = 28 / 2;
 
             int HalfProjWidth = Projectile.width / 2;
             int HalfProjHeight = Projectile.height / 2;
@@ -124,7 +125,7 @@ namespace Terbritish.Content.Items.Knives.KnifeProjectiles
             // "Hit anything between the player and the tip of the sword"
             // shootSpeed is 2.1f for reference, so this is basically plotting 12 pixels ahead from the center
             Vector2 start = Projectile.Center;
-            Vector2 end = start + Projectile.velocity * 6.9f;
+            Vector2 end = start + Projectile.velocity * 6f;
             float collisionPoint = 0f; // Don't need that variable, but required as parameter
             return Collision.CheckAABBvLineCollision(targetHitbox.TopLeft(), targetHitbox.Size(), start, end, CollisionWidth, ref collisionPoint);
         }

@@ -5,6 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
+using Terbritish.Globals;
 namespace Terbritish.Content.Items.Knives.KnifeItems
 {
     public class TinKnife : ModItem
@@ -42,18 +43,26 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.TinBar, 6);
-                recipe.AddTile(TileID.Anvils);
-                recipe.Register();
+            recipe.AddIngredient(ItemID.TinBar, 6);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.altFunctionUse == 2)
             {
-                Projectile.NewProjectile(source, position, velocity* 2.7f, ModContent.ProjectileType<TinKnifeThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
+                int proj = Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<TinKnifeThrown>(), (int)(damage * 0.67f), (int)(knockback * 0.99f), player.whoAmI);
+                Main.projectile[proj].GetGlobalProjectile<OreKnifeComboSetup>().fromtheOreKnives = true;
                 return false;
             }
-            return true;
+            else
+            {
+                int proj = Projectile.NewProjectile(source, position, velocity, type, damage, knockback, player.whoAmI);
+                Main.projectile[proj].GetGlobalProjectile<OreKnifeCombo>().fromOreKnives = true;
+                Main.projectile[proj].GetGlobalProjectile<OreKnifeComboSetup>().fromtheOreKnives = false;
+                return false;
+            }
         }
+
     }
 }

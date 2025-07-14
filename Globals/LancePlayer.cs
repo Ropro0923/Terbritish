@@ -17,11 +17,7 @@ namespace Terbritish.Content.Globals
     {
         public override void PostUpdate()
         {
-<<<<<<< HEAD:Globals/LanceAccelerationPlayer.cs
-            if (Math.Abs(Player.velocity.X) < MaxSpeed)
-=======
             if (ModContent.GetInstance<LancePlayer>().HoldingLance && Player.mount.Active)
->>>>>>> d319aa7199b89736fed55a900909a7b9b9027039:Globals/LancePlayer.cs
             {
 
                 Player.GetDamage(ModContent.GetInstance<BritishDamage>()) += 0.10f;
@@ -63,15 +59,6 @@ namespace Terbritish.Content.Globals
             if (ModContent.GetInstance<LancePlayer>().HoldingLance)
             {
                 AccelTimer++;
-                if (AccelTimer < 6)
-                {
-                    SpeedBoost++;
-                }
-                if (SpeedBoost == 1)
-                {
-                    Player.velocity.X += Player.direction + 0.2f;
-                    SpeedBoost = 0;
-                }
             }
         }
     }

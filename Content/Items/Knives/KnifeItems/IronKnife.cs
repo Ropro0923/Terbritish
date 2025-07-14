@@ -5,6 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
+using Terbritish.Globals;
 
 namespace Terbritish.Content.Items.Knives.KnifeItems
 {
@@ -55,10 +56,17 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
         {
             if (player.altFunctionUse == 2)
             {
-                Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<IronKnifeThrown>(), (int)(damage * 0.67f), knockback, player.whoAmI);
+                int proj = Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<IronKnifeThrown>(), (int)(damage * 0.67f), (int)(knockback * 0.99f), player.whoAmI);
+                Main.projectile[proj].GetGlobalProjectile<OreKnifeComboSetup>().fromtheOreKnives = true;
                 return false;
             }
-            return true;
+            else
+            {
+                int proj = Projectile.NewProjectile(source, position, velocity, type, damage, knockback, player.whoAmI);
+                Main.projectile[proj].GetGlobalProjectile<OreKnifeCombo>().fromOreKnives = true;
+                Main.projectile[proj].GetGlobalProjectile<OreKnifeComboSetup>().fromtheOreKnives = false;
+                return false;
+            }
         }
     }
 }

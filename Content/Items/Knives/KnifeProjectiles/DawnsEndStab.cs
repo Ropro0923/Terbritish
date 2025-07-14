@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Enums;
 using Terraria.ModLoader;
 using Terbritish.Content.Projectiles;
-
+using Terbritish.Content.Buffs;
 namespace Terbritish.Content.Items.Knives.KnifeProjectiles
 {
     // Shortsword projectiles are handled in a special way with how they draw and damage things

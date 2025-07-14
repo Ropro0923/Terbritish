@@ -35,6 +35,21 @@ Buffs: {
 		DisplayName: Scalding
 		Description: Mods.Terbritish.Buffs.Scalding.Description
 	}
+
+	OreKnifeSetupDebuff: {
+		Description: Mods.Terbritish.Buffs.OreKnifeSetupDebuff.Description
+		DisplayName: Ore Knife Setup Debuff
+	}
+
+	DawnsEndSetupDebuff: {
+		Description: Mods.Terbritish.Buffs.DawnsEndSetupDebuff.Description
+		DisplayName: Dawns End Setup Debuff
+	}
+
+	AlloySkin: {
+		DisplayName: Alloy Skin
+		Description: Mods.Terbritish.Buffs.AlloySkin.Description
+	}
 }
 
 Items: {
@@ -75,7 +90,14 @@ Items: {
 
 	CopperKnife: {
 		DisplayName: Copper Knife
-		Tooltip: ""
+		Tooltip:
+			'''
+			Left click to shank enemies
+			Right click to throw the knife
+			Set up a combo by throwing the knife, complete it by shanking
+			Completed combos deal increased damage and grant the player the Alloy Skin buff
+			      
+			'''
 	}
 
 	DawnsEnd: {
@@ -217,6 +239,26 @@ Items: {
 		Tooltip: ""
 		DisplayName: La Sangre De Sancho
 	}
+
+	TungstenKnife: {
+		Tooltip: ""
+		DisplayName: Tungsten Knife
+	}
+
+	SilverKnife: {
+		Tooltip: ""
+		DisplayName: Silver Knife
+	}
+
+	PlatinumKnife: {
+		Tooltip: ""
+		DisplayName: Platinum Knife
+	}
+
+	Pykrete: {
+		Tooltip: ""
+		DisplayName: Pykrete
+	}
 }
 
 Projectiles: {
@@ -276,6 +318,13 @@ Projectiles: {
 	ExampleLanceProjectile.DisplayName: Example Lance Projectile
 	ExampleTerbritishLanceProjectile.DisplayName: Example Terbritish Lance Projectile
 	LaSangreDeSanchoProjectile.DisplayName: La Sangre De Sancho Projectile
+	CorruptVortexBig.DisplayName: Corrupt Vortex Big
+	TungstenKnifeThrown.DisplayName: Tungsten Knife Thrown
+	TungstenKnifeStab.DisplayName: Tungsten Knife Stab
+	SilverKnifeThrown.DisplayName: Silver Knife Thrown
+	SilverKnifeStab.DisplayName: Silver Knife Stab
+	PlatinumKnifeThrown.DisplayName: Platinum Knife Thrown
+	PlatinumKnifeStab.DisplayName: Platinum Knife Stab
 }
 
 Configs: {

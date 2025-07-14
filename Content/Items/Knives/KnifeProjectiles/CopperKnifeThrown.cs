@@ -12,7 +12,7 @@ namespace Terbritish.Content.Items.Knives.KnifeProjectiles
             Projectile.width = 30;
             Projectile.height = 30;
             Projectile.friendly = true;
-            Projectile.DamageType = ModContent.GetInstance<BritishDamage>();
+            Projectile.DamageType = ModContent.GetInstance<KnifeslingerDamage>();
             Projectile.penetrate = 1;
             Projectile.timeLeft = 600;
             Projectile.tileCollide = true;

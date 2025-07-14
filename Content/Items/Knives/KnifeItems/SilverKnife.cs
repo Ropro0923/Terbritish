@@ -6,18 +6,17 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
 using Terbritish.Globals;
-
 namespace Terbritish.Content.Items.Knives.KnifeItems
 {
-    public class LeadKnife : ModItem
+    public class SilverKnife : ModItem
     {
         public override void SetDefaults()
         {
             Item.damage = 8;
-            Item.knockBack = 1.75f;
+            Item.knockBack = 2f;
             Item.useStyle = ItemUseStyleID.Rapier;
-            Item.useAnimation = 16;
-            Item.useTime = 16;
+            Item.useAnimation = 14;
+            Item.useTime = 14;
             Item.width = 32;
             Item.height = 32;
             Item.UseSound = SoundID.Item1;
@@ -27,17 +26,16 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
             Item.noMelee = true;
             Item.rare = ItemRarityID.White;
             Item.value = Item.sellPrice(0, 0, 0, 10);
-            Item.shoot = ModContent.ProjectileType<LeadKnifeStab>();
-            Item.shootSpeed = 2.1f;
+            Item.shoot = ModContent.ProjectileType<SilverKnifeStab>();
+            Item.shootSpeed = 2.2f;
         }
-
         public override bool AltFunctionUse(Player player)
         {
             return true;
         }
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
-            if (type == ModContent.ProjectileType<LeadKnifeStab>())
+            if (type == ModContent.ProjectileType<SilverKnifeStab>())
             {
                 damage = (int)(damage * 1.5f);
             }
@@ -45,7 +43,7 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.LeadBar, 6);
+            recipe.AddIngredient(ItemID.SilverBar, 6);
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
         }
@@ -53,7 +51,7 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
         {
             if (player.altFunctionUse == 2)
             {
-                int proj = Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<LeadKnifeThrown>(), (int)(damage * 0.67f), (int)(knockback * 0.99f), player.whoAmI);
+                int proj = Projectile.NewProjectile(source, position, velocity * 2.67f, ModContent.ProjectileType<SilverKnifeThrown>(), (int)(damage * 0.67f), (int)(knockback * 0.99f), player.whoAmI);
                 Main.projectile[proj].GetGlobalProjectile<OreKnifeComboSetup>().fromtheOreKnives = true;
                 return false;
             }
@@ -65,5 +63,6 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
                 return false;
             }
         }
+
     }
 }

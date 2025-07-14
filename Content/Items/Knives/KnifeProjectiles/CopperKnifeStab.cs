@@ -2,6 +2,7 @@
 using Terraria;
 using Terraria.Enums;
 using Terraria.ModLoader;
+using Terbritish.Content.DamageClasses;
 
 namespace Terbritish.Content.Items.Knives.KnifeProjectiles
 {
@@ -33,7 +34,7 @@ namespace Terbritish.Content.Items.Knives.KnifeProjectiles
             Projectile.penetrate = -1;
             Projectile.tileCollide = false;
             Projectile.scale = 1f;
-            Projectile.DamageType = DamageClass.MeleeNoSpeed;
+            Projectile.DamageType = ModContent.GetInstance<KnifeslingerDamage>();
             Projectile.ownerHitCheck = true; // Prevents hits through tiles. Most melee weapons that use projectiles have this
             Projectile.extraUpdates = 1; // Update 1+extraUpdates times per tick
             Projectile.timeLeft = 360; // This value does not matter since we manually kill it earlier, it just has to be higher than the duration we use in AI

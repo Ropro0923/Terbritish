@@ -5,6 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
+using Terbritish.Globals; 
 
 namespace Terbritish.Content.Items.Knives.KnifeItems
 {
@@ -73,8 +74,7 @@ namespace Terbritish.Content.Items.Knives.KnifeItems
                  int proj = Projectile.NewProjectile(source, position, velocity, type, damage, knockback, player.whoAmI);
                  Main.projectile[proj].GetGlobalProjectile<DawnsEndCombo>().fromDawnsEnd = true;
                  Main.projectile[proj].GetGlobalProjectile<DawnsEndComboSetup>().fromtheDawnsEnd = false;
-                 return false; // Prevent vanilla projectile spawn
-
+                 return false;  
              }
          }
     }
