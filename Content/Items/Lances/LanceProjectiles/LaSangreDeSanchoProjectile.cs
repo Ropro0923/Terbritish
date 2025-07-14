@@ -9,7 +9,7 @@ using Terbritish.Content.DamageClasses;
 
 namespace Terbritish.Content.Items.Lances.LanceProjectiles
 {
-	public class ExampleTerbritishLanceProjectile : ModProjectile
+	public class LaSangreDeSanchoProjectile : ModProjectile
 	{
 		public override void SetStaticDefaults() {
 			// This will cause the player to dismount if they are hit by another Jousting Lance.
@@ -40,7 +40,7 @@ namespace Terbritish.Content.Items.Lances.LanceProjectiles
 			Projectile.scale = 1f; // The scale of the projectile. This only effects the drawing and the width of the collision.
 			Projectile.hide = true; // We are drawing the projectile ourselves. See PreDraw() below.
 			Projectile.ownerHitCheck = true; // Make sure the owner of the projectile has line of sight to the target (aka can't hit things through tile).
-			Projectile.DamageType = ModContent.GetInstance<BritishDamage>(); // Set the damage to melee damage.
+			Projectile.DamageType = ModContent.GetInstance<DonQuixoteDamage>();
 
 			// Act like the normal Jousting Lance. Use this if you set the aiStyle to 19.
 			// AIType = ProjectileID.JoustingLance; 

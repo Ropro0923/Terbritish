@@ -1,6 +1,7 @@
 DamageClasses: {
 	BritishDamage.DisplayName: British Damage
 	KnifeslingerDamage.DisplayName: Knifeslinger Damage
+	DonQuixoteDamage.DisplayName: Don Quixote Damage
 }
 
 NPCs: {
@@ -211,6 +212,11 @@ Items: {
 		DisplayName: Example Terbritish Lance
 		Tooltip: ""
 	}
+
+	LaSangreDeSancho: {
+		Tooltip: ""
+		DisplayName: La Sangre De Sancho
+	}
 }
 
 Projectiles: {
@@ -269,6 +275,7 @@ Projectiles: {
 	TestLanceProjectile.DisplayName: Test Lance Projectile
 	ExampleLanceProjectile.DisplayName: Example Lance Projectile
 	ExampleTerbritishLanceProjectile.DisplayName: Example Terbritish Lance Projectile
+	LaSangreDeSanchoProjectile.DisplayName: La Sangre De Sancho Projectile
 }
 
 Configs: {

@@ -17,7 +17,7 @@ public class LanceAccelerationPlayer : ModPlayer
     {
         if (HoldingLance)
         {
-            if (Math.Abs(Player.velocity.X) < 13f)
+            if (Math.Abs(Player.velocity.X) < MaxSpeed)
             {
                 Player.velocity.X += ((SpeedBoost / 60f) + StartBoost) * Player.direction;
 
