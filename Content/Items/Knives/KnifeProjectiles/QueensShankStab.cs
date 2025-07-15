@@ -55,8 +55,7 @@ namespace Terbritish.Content.Items.Knives.KnifeProjectiles
             ModContent.ProjectileType<CrystalGelShard>(), (int)(Projectile.damage * 0.5f), Projectile.knockBack, Projectile.owner);
             Vector2 velocity2 = Projectile.velocity.RotatedByRandom(MathHelper.ToRadians(360));
             Vector2 Peanits2 = Projectile.Center - new Vector2(Main.rand.NextFloat(-4, 4));
-            Projectile.NewProjectile(Projectile.GetSource_FromThis(), Peanits2, velocity2,
-            ModContent.ProjectileType<CrystalGelShard>(), (int)(Projectile.damage * 0.5f), Projectile.knockBack, Projectile.owner);
+          
             Vector2 velocity3 = Projectile.velocity.RotatedByRandom(MathHelper.ToRadians(360));
             Vector2 Peanits3 = Projectile.Center - new Vector2(Main.rand.NextFloat(-4, 4));
             Vector2 velocity4 = Projectile.velocity.RotatedByRandom(MathHelper.ToRadians(360));
@@ -69,10 +68,17 @@ namespace Terbritish.Content.Items.Knives.KnifeProjectiles
 
 
             }
+                if (Main.rand.NextBool(3))
+            {
+
+             Projectile.NewProjectile(Projectile.GetSource_FromThis(), Peanits2, velocity2,
+            ModContent.ProjectileType<CrystalGelShard>(), (int)(Projectile.damage * 0.5f), Projectile.knockBack, Projectile.owner);
+            }
 
             if (Main.rand.NextBool(3))
             {
-
+            
+                 
                 Projectile.NewProjectile(Projectile.GetSource_FromThis(), Peanits4, velocity4,
            ModContent.ProjectileType<CrystalGelShard>(), (int)(Projectile.damage * 0.5f), Projectile.knockBack, Projectile.owner);
             }
