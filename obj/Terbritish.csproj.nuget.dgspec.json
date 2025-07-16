@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rcber\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj": {}
+    "C:\\Users\\rcber\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rcber\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj": {
+    "C:\\Users\\rcber\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rcber\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj",
+        "projectUniqueName": "C:\\Users\\rcber\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj",
         "projectName": "Terbritish",
-        "projectPath": "C:\\Users\\rcber\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj",
+        "projectPath": "C:\\Users\\rcber\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\Terbritish.csproj",
         "packagesPath": "C:\\Users\\rcber\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rcber\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\obj\\",
+        "outputPath": "C:\\Users\\rcber\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Terbritish\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rcber\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -59,12 +59,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

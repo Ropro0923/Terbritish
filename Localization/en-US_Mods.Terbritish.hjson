@@ -332,7 +332,7 @@ Configs: {
 		DisplayName: Terbritish Config
 
 		TerMerica: {
-			Label: Ter Merica
+			Label: TerMerica
 			Tooltip: ""
 		}
 
@@ -346,4 +346,9 @@ Configs: {
 			Tooltip: ""
 		}
 	}
+}
+
+Blessings: {
+	ScotstoneBlessMessage1: Scotstone has appeared!
+	ScotstoneBlessMessage2: Scotstone has appeared
 }
