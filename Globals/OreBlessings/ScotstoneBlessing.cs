@@ -9,7 +9,7 @@
         using Terraria.ModLoader;
         using Terraria.ModLoader.IO;
 
-        namespace Terbritish.Globals
+        namespace Terbritish.Globals.OreBlessings
         {
             public class ScotstoneBlessing : ModSystem
             {

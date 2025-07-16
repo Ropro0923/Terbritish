@@ -259,6 +259,31 @@ Items: {
 		Tooltip: ""
 		DisplayName: Pykrete
 	}
+
+	PykreteBow: {
+		DisplayName: Pykrete Bow
+		Tooltip: ""
+	}
+
+	PykreteSword: {
+		DisplayName: Pykrete Sword
+		Tooltip: ""
+	}
+
+	AstatineKnife: {
+		DisplayName: Astatine Knife
+		Tooltip: ""
+	}
+
+	PlutoniumShank: {
+		DisplayName: Plutonium Shank
+		Tooltip: ""
+	}
+
+	UraniumKnife: {
+		DisplayName: Uranium Knife
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -325,6 +350,12 @@ Projectiles: {
 	SilverKnifeStab.DisplayName: Silver Knife Stab
 	PlatinumKnifeThrown.DisplayName: Platinum Knife Thrown
 	PlatinumKnifeStab.DisplayName: Platinum Knife Stab
+	AstatineKnifeStab.DisplayName: Astatine Knife Stab
+	AstatineKnifeThrown.DisplayName: Astatine Knife Thrown
+	PlutoniumShankStab.DisplayName: Plutonium Shank Stab
+	PlutoniumShankThrown.DisplayName: Plutonium Shank Thrown
+	UraniumKnifeStab.DisplayName: Uranium Knife Stab
+	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
 }
 
 Configs: {
@@ -351,4 +382,11 @@ Configs: {
 Blessings: {
 	ScotstoneBlessMessage1: Scotstone has appeared!
 	ScotstoneBlessMessage2: Scotstone has appeared
+}
+
+Tiles: {
+	ScotstoneOre: {
+		DisplayName: Scotstone Ore
+		Tooltip: ""
+	}
 }

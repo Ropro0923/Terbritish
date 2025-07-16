@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Terbritish.Content.DamageClasses;
 
-namespace Terbritish.Globals
+namespace Terbritish.Globals.ClassChanges
 {
     public class VanillaItemClassChanger : GlobalItem
     {
