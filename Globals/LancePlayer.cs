@@ -54,12 +54,5 @@ namespace Terbritish.Content.Globals
     {
         public int AccelTimer;
         public int SpeedBoost;
-        public override void PostUpdate()
-        {
-            if (ModContent.GetInstance<LancePlayer>().HoldingLance)
-            {
-                AccelTimer++;
-            }
-        }
     }
 }

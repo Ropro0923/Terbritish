@@ -35,26 +35,24 @@ namespace Terbritish.Content.Items.Lances.LanceItems
 
         public override void HoldItem(Player player)
         {
-            player.itemRotation = 0f;
-            var LancePlayer = player.GetModPlayer<LancePlayer>();
-            var LanceAcceleration = player.GetModPlayer<LanceAcceleration>();
+            var lancePlayer = player.GetModPlayer<LancePlayer>();
+            var lanceAccel = player.GetModPlayer<LanceAcceleration>();
 
-            if (player.channel && player.HeldItem == Item)
+            if (player.channel && player.HeldItem.type == Item.type)
             {
-                LancePlayer.HoldingLance = true;
-                LanceAcceleration.AccelTimer++;
-                if (LanceAcceleration.AccelTimer >= 10 && LanceAcceleration.SpeedBoost < 10)
+                lancePlayer.HoldingLance = true;
+                lanceAccel.AccelTimer++;
+
+                if (lanceAccel.AccelTimer == 10)
                 {
-                    player.velocity.X += player.direction + 0.2f;
-                    LanceAcceleration.AccelTimer = 0;
-                    LanceAcceleration.SpeedBoost++;
+                    player.velocity.X += 0.2f * player.direction;
+                    lanceAccel.AccelTimer = 0;
                 }
             }
             else
             {
-                LanceAcceleration.SpeedBoost = 0;
-                LanceAcceleration.AccelTimer = 0;
-                LancePlayer.HoldingLance = false;
+                lanceAccel.AccelTimer = 0;
+                lancePlayer.HoldingLance = false;
             }
         }
     }
