@@ -15,7 +15,7 @@ namespace Terbritish.Content.Tiles
 			Main.tileLighted[Type] = false;
 			Main.tileBlendAll[Type] = false;
 			TileID.Sets.CanBeClearedDuringGeneration[Type] = true;
-			AddMapEntry(new Color(22, 120, 26), Language.GetText("Scotstone Ore"));
+			AddMapEntry(new Color(22, 120, 26), Language.GetText("Scotstone"));
 			MineResist = 3.5f;
 			MinPick = 150;
 		}
