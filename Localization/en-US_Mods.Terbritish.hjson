@@ -284,6 +284,16 @@ Items: {
 		DisplayName: Uranium Knife
 		Tooltip: ""
 	}
+
+	ScotstoneBar: {
+		DisplayName: Scotstone Bar
+		Tooltip: ""
+	}
+
+	ScotstoneOre: {
+		DisplayName: Scotstone Ore
+		Tooltip: ""
+	}
 }
 
 Projectiles: {

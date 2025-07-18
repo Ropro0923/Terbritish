@@ -5,7 +5,8 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
-using Terbritish.Globals; 
+using Terbritish.Globals;
+using Terbritish.Globals.KnifeCombos;
 
 namespace Terbritish.Content.Items.Knives.KnifeItems
 {

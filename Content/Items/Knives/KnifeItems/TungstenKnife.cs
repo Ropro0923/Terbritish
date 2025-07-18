@@ -6,6 +6,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terbritish.Content.DamageClasses;
 using Terbritish.Globals;
+using Terbritish.Content.Buffs;
+using Terbritish.Globals.KnifeCombos;
+
 namespace Terbritish.Content.Items.Knives.KnifeItems
 {
     public class TungstenKnife : ModItem

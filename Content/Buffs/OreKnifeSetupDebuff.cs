@@ -68,7 +68,5 @@ namespace Terbritish.Content.Buffs
                 Main.dust[dust].noGravity = true;
             }
         }
-
-
     }
 }
