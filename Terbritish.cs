@@ -51,7 +51,6 @@ namespace Terbritish
 			{
 				TerbritishCaughtNpcs.RegisterItems();
 			}
-
 		}
 
 		public override void Unload()

@@ -26,11 +26,8 @@ namespace Terbritish.Globals
             {
 
                 projectile.scale = 1.15f;
-
-
             }
         }
-
 
         public override void ModifyHitNPC(Projectile projectile, NPC target, ref NPC.HitModifiers modifiers)
         {
@@ -39,6 +36,5 @@ namespace Terbritish.Globals
                 modifiers.SourceDamage *= 1.33f;
             }
         }
-
     }
 }
