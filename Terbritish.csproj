@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Import tModLoader mod properties -->
+  <Import Project="..\tModLoader.targets" />
+
+  <!-- General -->
+  <PropertyGroup>
+    <!-- You can define properties here, like OutputPath, TargetFramework, etc. -->
+  </PropertyGroup>
+
+  <!-- References -->
+  <ItemGroup>
+    <Reference Include="Fargowiltas">
+      <HintPath>lib\Fargowiltas.dll</HintPath>
+    </Reference>
+    <Reference Include="gunrightsmod">
+      <HintPath>lib\gunrightsmod.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

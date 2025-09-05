@@ -1,0 +1,422 @@
+DamageClasses: {
+	BritishDamage.DisplayName: British Damage
+	KnifeslingerDamage.DisplayName: Knifeslinger Damage
+	DonQuixoteDamage.DisplayName: Don Quixote Damage
+}
+
+NPCs: {
+	DapperChapper: {
+		Upgraded: Mods.Terbritish.NPCs.DapperChapper.Upgraded
+		DisplayName: Dapper Chapper
+
+		TownNPCMood: {
+			Content: I am content.
+			NoHome: I hate not having a home.
+			FarFromHome: I am too far from home.
+			LoveSpace: I love having so much space.
+			DislikeCrowded: I dislike how crowded I am.
+			HateCrowded: I hate how crowded I am.
+			LikeBiome: I like {BiomeName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LoveNPC: I love {NPCName}.
+			LikeNPC: I like {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			HateNPC: I hate {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+
+		Census.SpawnCondition: Conditions unknown
+	}
+}
+
+Buffs: {
+	Scalding: {
+		DisplayName: Scalding
+		Description: Mods.Terbritish.Buffs.Scalding.Description
+	}
+
+	OreKnifeSetupDebuff: {
+		Description: Mods.Terbritish.Buffs.OreKnifeSetupDebuff.Description
+		DisplayName: Ore Knife Setup Debuff
+	}
+
+	DawnsEndSetupDebuff: {
+		Description: Mods.Terbritish.Buffs.DawnsEndSetupDebuff.Description
+		DisplayName: Dawns End Setup Debuff
+	}
+
+	AlloySkin: {
+		DisplayName: Alloy Skin
+		Description: Mods.Terbritish.Buffs.AlloySkin.Description
+	}
+
+	PykreteShivSetupDebuff: {
+		DisplayName: Pykrete Shiv Setup Debuff
+		Description: Mods.Terbritish.Buffs.PykreteShivSetupDebuff.Description
+	}
+}
+
+Items: {
+	TeaLeafChestplate: {
+		DisplayName: Tea Leaf Chestplate
+		Tooltip: ""
+	}
+
+	TeaLeafHat: {
+		DisplayName: Tea Leaf Hat
+		Tooltip: ""
+	}
+
+	TeaLeafLeggings: {
+		DisplayName: Tea Leaf Leggings
+		Tooltip: ""
+	}
+
+	AdamantiteShiv: {
+		DisplayName: Adamantite Shiv
+		Tooltip: ""
+	}
+
+	Bloodslinger: {
+		DisplayName: Bloodslinger
+		Tooltip: ""
+	}
+
+	Caliburn: {
+		DisplayName: Caliburn
+		Tooltip: ""
+	}
+
+	CobaltDagger: {
+		DisplayName: Cobalt Dagger
+		Tooltip: ""
+	}
+
+	CopperKnife: {
+		DisplayName: Copper Knife
+		Tooltip:
+			'''
+			Left click to shank enemies
+			Right click to throw the knife
+			Set up a combo by throwing the knife, complete it by shanking
+			Completed combos deal increased damage and grant the player the Alloy Skin buff
+			      
+			'''
+	}
+
+	DawnsEnd: {
+		DisplayName: Dawns End
+		Tooltip: ""
+	}
+
+	Dwarfamasa: {
+		DisplayName: Dwarfamasa
+		Tooltip: ""
+	}
+
+	GoldKnife: {
+		DisplayName: Gold Knife
+		Tooltip: ""
+	}
+
+	IronKnife: {
+		DisplayName: Iron Knife
+		Tooltip: ""
+	}
+
+	LeadKnife: {
+		DisplayName: Lead Knife
+		Tooltip: ""
+	}
+
+	London: {
+		DisplayName: London
+		Tooltip: ""
+	}
+
+	MoonAnger: {
+		DisplayName: Moon Anger
+		Tooltip: ""
+	}
+
+	MythrilShiv: {
+		DisplayName: Mythril Shiv
+		Tooltip: ""
+	}
+
+	OrichalcumShiv: {
+		DisplayName: Orichalcum Shiv
+		Tooltip: ""
+	}
+
+	PalladiumKnife: {
+		DisplayName: Palladium Knife
+		Tooltip: ""
+	}
+
+	PrecipiceBlade: {
+		DisplayName: Precipice Blade
+		Tooltip: ""
+	}
+
+	QueensShank: {
+		DisplayName: Queens Shank
+		Tooltip: ""
+	}
+
+	TerraShank: {
+		DisplayName: Terra Shank
+		Tooltip: ""
+	}
+
+	TinKnife: {
+		DisplayName: Tin Knife
+		Tooltip: ""
+	}
+
+	TrueCaliburn: {
+		DisplayName: True Caliburn
+		Tooltip: ""
+	}
+
+	TrueTwilightSpark: {
+		DisplayName: True Twilight Spark
+		Tooltip: ""
+	}
+
+	TwilightSpark: {
+		DisplayName: Twilight Spark
+		Tooltip: ""
+	}
+
+	TeaLeaves: {
+		DisplayName: Tea Leaves
+		Tooltip: ""
+	}
+
+	Ceramic: {
+		DisplayName: Ceramic
+		Tooltip: ""
+	}
+
+	BrenGun: {
+		DisplayName: Bren Gun
+		Tooltip: ""
+	}
+
+	BritishBazooka: {
+		DisplayName: British Bazooka
+		Tooltip: ""
+	}
+
+	CuppaTea: {
+		DisplayName: Cuppa Tea
+		Tooltip: ""
+	}
+
+	TeaLauncher: {
+		DisplayName: Tea Launcher
+		Tooltip: ""
+	}
+
+	DapperChapper: {
+		DisplayName: Dapper Chapper
+		Tooltip: ""
+	}
+
+	TestLance: {
+		Tooltip: ""
+		DisplayName: Test Lance
+	}
+
+	ExampleLance: {
+		DisplayName: Example Lance
+		Tooltip: ""
+	}
+
+	ExampleTerbritishLance: {
+		DisplayName: Example Terbritish Lance
+		Tooltip: ""
+	}
+
+	LaSangreDeSancho: {
+		Tooltip: ""
+		DisplayName: La Sangre De Sancho
+	}
+
+	TungstenKnife: {
+		Tooltip: ""
+		DisplayName: Tungsten Knife
+	}
+
+	SilverKnife: {
+		Tooltip: ""
+		DisplayName: Silver Knife
+	}
+
+	PlatinumKnife: {
+		Tooltip: ""
+		DisplayName: Platinum Knife
+	}
+
+	Pykrete: {
+		Tooltip: ""
+		DisplayName: Pykrete
+	}
+
+	PykreteBow: {
+		DisplayName: Pykrete Bow
+		Tooltip: ""
+	}
+
+	PykreteSword: {
+		DisplayName: Pykrete Sword
+		Tooltip: ""
+	}
+
+	AstatineKnife: {
+		DisplayName: Astatine Knife
+		Tooltip: ""
+	}
+
+	PlutoniumShank: {
+		DisplayName: Plutonium Shank
+		Tooltip: ""
+	}
+
+	UraniumKnife: {
+		DisplayName: Uranium Knife
+		Tooltip: ""
+	}
+
+	ScotstoneBar: {
+		DisplayName: Scotstone Bar
+		Tooltip: ""
+	}
+
+	ScotstoneOre: {
+		DisplayName: Scotstone Ore
+		Tooltip: ""
+	}
+
+	PykreteShiv: {
+		DisplayName: Pykrete Shiv
+		Tooltip: ""
+	}
+
+	ExampleKnife: {
+		Tooltip: ""
+		DisplayName: Example Knife
+	}
+}
+
+Projectiles: {
+	AdamantiteShivStab.DisplayName: Adamantite Shiv Stab
+	AdamantiteShivThrown.DisplayName: Adamantite Shiv Thrown
+	BloodslingerStab.DisplayName: Bloodslinger Stab
+	BloodslingerThrown.DisplayName: Bloodslinger Thrown
+	CaliburnStab.DisplayName: Caliburn Stab
+	CaliburnThrown.DisplayName: Caliburn Thrown
+	CobaltDaggerStab.DisplayName: Cobalt Dagger Stab
+	CobaltDaggerThrown.DisplayName: Cobalt Dagger Thrown
+	CopperKnifeStab.DisplayName: Copper Knife Stab
+	CopperKnifeThrown.DisplayName: Copper Knife Thrown
+	DawnsEndStab.DisplayName: Dawns End Stab
+	DawnsEndThrown.DisplayName: Dawns End Thrown
+	DwarfamasaStab.DisplayName: Dwarfamasa Stab
+	DwarfamasaThrown.DisplayName: Dwarfamasa Thrown
+	GoldKnifeStab.DisplayName: Gold Knife Stab
+	GoldKnifeThrown.DisplayName: Gold Knife Thrown
+	IronKnifeStab.DisplayName: Iron Knife Stab
+	IronKnifeThrown.DisplayName: Iron Knife Thrown
+	LeadKnifeStab.DisplayName: Lead Knife Stab
+	LeadKnifeThrown.DisplayName: Lead Knife Thrown
+	LondonStab.DisplayName: London Stab
+	LondonThrown.DisplayName: London Thrown
+	MoonAngerStab.DisplayName: Moon Anger Stab
+	MoonAngerThrown.DisplayName: Moon Anger Thrown
+	MythrilShivStab.DisplayName: Mythril Shiv Stab
+	MythrilShivThrown.DisplayName: Mythril Shiv Thrown
+	OrichalcumShivStab.DisplayName: Orichalcum Shiv Stab
+	OrichalcumShivThrown.DisplayName: Orichalcum Shiv Thrown
+	PalladiumKnifeStab.DisplayName: Palladium Knife Stab
+	PalladiumKnifeThrown.DisplayName: Palladium Knife Thrown
+	PrecipiceBladeStab.DisplayName: Precipice Blade Stab
+	PrecipiceBladeThrown.DisplayName: Precipice Blade Thrown
+	QueensShankStab.DisplayName: Queens Shank Stab
+	QueensShankThrown.DisplayName: Queens Shank Thrown
+	TerraShankEnergy.DisplayName: Terra Shank Energy
+	TerraShankStab.DisplayName: Terra Shank Stab
+	TerraShankThrown.DisplayName: Terra Shank Thrown
+	TinKnifeStab.DisplayName: Tin Knife Stab
+	TinKnifeThrown.DisplayName: Tin Knife Thrown
+	TrueCaliburnStab.DisplayName: True Caliburn Stab
+	TrueCaliburnThrown.DisplayName: True Caliburn Thrown
+	TrueTwilightSparkStab.DisplayName: True Twilight Spark Stab
+	TrueTwilightSparkThrown.DisplayName: True Twilight Spark Thrown
+	TwilightSparkStab.DisplayName: Twilight Spark Stab
+	TwilightSparkThrown.DisplayName: Twilight Spark Thrown
+	CorruptVortex.DisplayName: Corrupt Vortex
+	CrystalGelShard.DisplayName: Crystal Gel Shard
+	NapalmBad.DisplayName: Napalm Bad
+	TeaDroplet.DisplayName: Tea Droplet
+	TeaLauncherProjectile.DisplayName: Tea Launcher Projectile
+	TeaProjectile.DisplayName: Tea Projectile
+	AstatineSplode.DisplayName: Astatine Splode
+	TestLanceProjectile.DisplayName: Test Lance Projectile
+	ExampleLanceProjectile.DisplayName: Example Lance Projectile
+	ExampleTerbritishLanceProjectile.DisplayName: Example Terbritish Lance Projectile
+	LaSangreDeSanchoProjectile.DisplayName: La Sangre De Sancho Projectile
+	CorruptVortexBig.DisplayName: Corrupt Vortex Big
+	TungstenKnifeThrown.DisplayName: Tungsten Knife Thrown
+	TungstenKnifeStab.DisplayName: Tungsten Knife Stab
+	SilverKnifeThrown.DisplayName: Silver Knife Thrown
+	SilverKnifeStab.DisplayName: Silver Knife Stab
+	PlatinumKnifeThrown.DisplayName: Platinum Knife Thrown
+	PlatinumKnifeStab.DisplayName: Platinum Knife Stab
+	AstatineKnifeStab.DisplayName: Astatine Knife Stab
+	AstatineKnifeThrown.DisplayName: Astatine Knife Thrown
+	PlutoniumShankStab.DisplayName: Plutonium Shank Stab
+	PlutoniumShankThrown.DisplayName: Plutonium Shank Thrown
+	UraniumKnifeStab.DisplayName: Uranium Knife Stab
+	UraniumKnifeThrown.DisplayName: Uranium Knife Thrown
+	PykreteShivStab.DisplayName: Pykrete Shiv Stab
+	PykreteShivThrown.DisplayName: Pykrete Shiv Thrown
+	IceShardProj.DisplayName: Ice Shard Proj
+	ExampleKnifeThrown.DisplayName: Example Knife Thrown
+	ExampleKnifeStab.DisplayName: Example Knife Stab
+}
+
+Configs: {
+	TerbritishConfig: {
+		DisplayName: Terbritish Config
+
+		gunrightsmod: {
+			Label: gunrightsmod
+			Tooltip: ""
+		}
+
+		Spiritrum: {
+			Label: Spiritrum
+			Tooltip: ""
+		}
+
+		MagnoliasMod: {
+			Label: Magnolias Mod
+			Tooltip: ""
+		}
+	}
+}
+
+Blessings: {
+	ScotstoneBlessMessage1: Scotstone has appeared!
+	ScotstoneBlessMessage2: Scotstone has appeared
+}
+
+Tiles: {
+	ScotstoneOre: {
+		DisplayName: Scotstone Ore
+		Tooltip: ""
+	}
+}
